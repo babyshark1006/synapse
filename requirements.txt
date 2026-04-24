@@ -1,4 +1,17 @@
-# Day 1 最小依赖(用于验证 API 连通性)
-anthropic==0.40.0
-openai==1.54.0
-python-dotenv==1.0.1
+# API 基础(松版本,允许小版本升级)
+anthropic>=0.41.0,<1.0.0
+openai>=1.54.0,<2.0.0
+httpx>=0.27.0,<0.28.0
+python-dotenv>=1.0.1,<2.0.0
+
+# RAG 核心框架
+llama-index>=0.12.8,<0.13.0
+llama-index-llms-anthropic>=0.6.3,<0.7.0
+llama-index-embeddings-openai>=0.3.1,<0.4.0
+llama-index-vector-stores-chroma>=0.4.1,<0.5.0
+
+# 向量数据库
+chromadb>=0.5.23,<0.6.0
+
+# PDF 解析(Day 2 用基础版,Week 3 升级 Unstructured)
+pypdf>=5.1.0,<6.0.0

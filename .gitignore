@@ -1,0 +1,43 @@
+# Python 相关
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# 环境变量(⚠️ 最重要:含 API key)
+.env
+.env.local
+.env.*.local
+
+# IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Mac 系统文件
+.DS_Store
+
+# 数据文件(测试 PDF 太大,不进 git)
+data/papers/*.pdf
+
+# 日志文件
+*.log
+logs/
+
+# 向量数据库本地存储
+chroma_db/
+*.sqlite3
+
+# 临时文件
+tmp/
+temp/

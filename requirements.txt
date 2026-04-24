@@ -1,0 +1,4 @@
+# Day 1 最小依赖(用于验证 API 连通性)
+anthropic==0.40.0
+openai==1.54.0
+python-dotenv==1.0.1

@@ -40,4 +40,5 @@ chroma_db/
 
 # 临时文件
 tmp/
-temp/
+temp/.streamlit/
+app_backup_part4.py

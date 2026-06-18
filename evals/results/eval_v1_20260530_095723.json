@@ -1,0 +1,4544 @@
+{
+  "metadata": {
+    "version": "v1",
+    "timestamp": "2026-05-30T09:57:23.242901",
+    "total_questions": 50,
+    "successful_count": 50
+  },
+  "report": {
+    "total_questions": 50,
+    "successful_count": 50,
+    "avg_total": 0.824,
+    "metric_avgs": {
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "accuracy": 0.367,
+      "relevance": 0.72,
+      "citation_rate": 1.0,
+      "refusal": 0.9
+    },
+    "by_category": {
+      "metadata": 0.9,
+      "definition": 0.856,
+      "detail": 0.865,
+      "cross_paper": 0.707,
+      "out_of_scope": 0.793
+    },
+    "by_difficulty": {
+      "easy": 0.868,
+      "medium": 0.828,
+      "hard": 0.782
+    },
+    "bad_cases": []
+  },
+  "details": [
+    {
+      "question": {
+        "id": "eval_001",
+        "category": "metadata",
+        "difficulty": "easy",
+        "question": "Transformer 论文的作者是谁?",
+        "ground_truth": {
+          "expected_answer": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin(8 位,等同贡献,顺序随机)",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "8 位作者",
+            "Vaswani",
+            "Equal contribution"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_001",
+        "category": "metadata",
+        "difficulty": "easy",
+        "question": "Transformer 论文的作者是谁?",
+        "ground_truth": {
+          "expected_answer": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin(8 位,等同贡献,顺序随机)",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "8 位作者",
+            "Vaswani",
+            "Equal contribution"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，该论文的作者包括以下8位研究者：\n\n1. **Ashish Vaswani** (Google Brain)\n2. **Noam Shazeer** (Google Brain) \n3. **Niki Parmar** (Google Research)\n4. **Jakob Uszkoreit** (Google Research)\n5. **Llion Jones** (Google Research)\n6. **Aidan N. Gomez** (University of Toronto)\n7. **Łukasz Kaiser** (Google Brain)\n8. **Illia Polosukhin**\n\n根据论文片段显示，所有作者均为等同贡献（Equal contribution），作者排序是随机的。论文还详细说明了各位作者的具体贡献：Jakob提出了用自注意力机制替代RNN的想法；Ashish与Illia设计并实现了第一个Transformer模型；Noam提出了缩放点积注意力、多头注意力和无参数位置表示等关键技术。\n\n该论文发表在2017年第31届神经信息处理系统会议(NIPS 2017)上，论文标题为\"Attention Is All You Need\"。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.37933150337296456,
+            "text_preview": "∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Tra"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.3434381160184536,
+            "text_preview": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need "
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "14",
+            "score": 0.33855152571443226,
+            "text_preview": "Exploring the limits of transfer learning with a uniﬁed text-to-text transformer. arXiv e-prints, 2019. URL https://arxiv.org/abs/1910.10683. [52] Adam Roberts, Colin Raffel, and Noam Shazeer. How muc"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "10",
+            "score": 0.3381710828113957,
+            "text_preview": "For translation tasks, the Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers. On both WMT 2014 English-to-German and WMT 2014 English-to-Fre"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "12",
+            "score": 0.3320827330763478,
+            "text_preview": "Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016. [39] Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. D"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.85
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.667,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.917
+      }
+    },
+    {
+      "question": {
+        "id": "eval_002",
+        "category": "metadata",
+        "difficulty": "easy",
+        "question": "Transformer 论文标题是什么?",
+        "ground_truth": {
+          "expected_answer": "Attention Is All You Need",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Attention Is All You Need"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "strict"
+        }
+      },
+      "result": {
+        "id": "eval_002",
+        "category": "metadata",
+        "difficulty": "easy",
+        "question": "Transformer 论文标题是什么?",
+        "ground_truth": {
+          "expected_answer": "Attention Is All You Need",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Attention Is All You Need"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，论文标题是 **\"Attention Is All You Need\"**。\n\n这篇论文由 Ashish Vaswani 等人发表，提出了一种全新的网络架构 Transformer，该架构完全基于注意力机制，摒弃了循环和卷积结构。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.38334318750836655,
+            "text_preview": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "10",
+            "score": 0.37155094542934336,
+            "text_preview": "For translation tasks, the Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers. On both WMT 2014 English-to-German and WMT 2014 English-to-Fre"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.36639241741770856,
+            "text_preview": "∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Tra"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.3616857170142697,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "10",
+            "score": 0.3547803993161747,
+            "text_preview": "Table 4: The Transformer generalizes well to English constituency parsing (Results are on Section 23 of WSJ) Parser Training WSJ 23 F1 Vinyals & Kaiser el al. (2014) [37] WSJ only, discriminative 88.3"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 4.17
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 1.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 1.0
+      }
+    },
+    {
+      "question": {
+        "id": "eval_003",
+        "category": "metadata",
+        "difficulty": "easy",
+        "question": "RAG 论文的第一作者是谁?",
+        "ground_truth": {
+          "expected_answer": "Patrick Lewis(Facebook AI Research)",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Patrick Lewis",
+            "Facebook AI Research"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_003",
+        "category": "metadata",
+        "difficulty": "easy",
+        "question": "RAG 论文的第一作者是谁?",
+        "ground_truth": {
+          "expected_answer": "Patrick Lewis(Facebook AI Research)",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Patrick Lewis",
+            "Facebook AI Research"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定RAG论文的第一作者是谁。\n\n检索到的论文片段中虽然包含了RAG论文的技术内容、实验结果和代码开源信息，但没有包含作者信息或论文标题页等能够显示第一作者身份的内容。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.3521164547798855,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.34929680573214594,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.3353557031766908,
+            "text_preview": "Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20]. It is worth noting that RAG’s retriever is initialized using DPR’s retriever"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "17",
+            "score": 0.33506147787809615,
+            "text_preview": "After submission, We have ported our code to HuggingFace Transformers [66]3, which achieves equivalent performance to the previous version but is a cleaner and easier to use implementation. This versi"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.3329877989971003,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 3.59
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.75
+      }
+    },
+    {
+      "question": {
+        "id": "eval_004",
+        "category": "metadata",
+        "difficulty": "medium",
+        "question": "RAG 论文的标题是什么?",
+        "ground_truth": {
+          "expected_answer": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Retrieval-Augmented Generation",
+            "Knowledge-Intensive NLP Tasks"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_004",
+        "category": "metadata",
+        "difficulty": "medium",
+        "question": "RAG 论文的标题是什么?",
+        "ground_truth": {
+          "expected_answer": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Retrieval-Augmented Generation",
+            "Knowledge-Intensive NLP Tasks"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定RAG论文的完整标题。\n\n检索到的论文片段来自文件路径为 `/Users/roy/Documents/synapse/data/papers/rag.pdf` 的论文，该论文详细介绍了RAG（Retrieval-Augmented Generation）模型的方法、实验结果和性能表现，但在提供的片段中并未包含论文的标题信息。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.39329067093058245,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.38148332618605035,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.379027650690253,
+            "text_preview": "We follow best practice and use pairwise comparative evaluation [34]. Evaluators are shown an answer and two generated questions, one from BART and one from RAG. They are then asked to pick one of fou"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.37250681265752156,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.37023464099212666,
+            "text_preview": "Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20]. It is worth noting that RAG’s retriever is initialized using DPR’s retriever"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 3.99
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.875
+      }
+    },
+    {
+      "question": {
+        "id": "eval_005",
+        "category": "metadata",
+        "difficulty": "easy",
+        "question": "ReAct 论文的作者中,Shunyu Yao 在哪个机构?",
+        "ground_truth": {
+          "expected_answer": "Princeton University 普林斯顿大学",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Princeton",
+            "普林斯顿"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_005",
+        "category": "metadata",
+        "difficulty": "easy",
+        "question": "ReAct 论文的作者中,Shunyu Yao 在哪个机构?",
+        "ground_truth": {
+          "expected_answer": "Princeton University 普林斯顿大学",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Princeton",
+            "普林斯顿"
+          ]
+        },
+        "synapse_answer": "根据 ReAct 论文的作者信息，Shunyu Yao 在 **普林斯顿大学计算机科学系**（Department of Computer Science, Princeton University）。\n\n论文中明确标注了作者的机构归属：Shunyu Yao 标注为\"1\"，对应的机构是\"1Department of Computer Science, Princeton University\"，邮箱地址为 shunyuy@princeton.edu。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "1",
+            "score": 0.36816201742258475,
+            "text_preview": "Published as a conference paper at ICLR 2023 REAC T: S YNERGIZING REASONING AND ACTING IN LANGUAGE MODELS Shunyu Yao∗*,1, Jeffrey Zhao2, Dian Yu2, Nan Du2, Izhak Shafran2, Karthik Narasimhan1, Yuan Ca"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.3482020339974456,
+            "text_preview": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.34655868429471853,
+            "text_preview": "Published as a conference paper at ICLR 2023 We conduct empirical evaluations ofReAct and state-of-the-art baselines on four diverse benchmarks: question answering (HotPotQA, Yang et al., 2018), fact "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "4",
+            "score": 0.3436248938730035,
+            "text_preview": "Published as a conference paper at ICLR 2023 appear sparsely in the most relevant positions of a trajectory, so we let the language model decide the asynchronous occurrence of thoughts and actions for"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "10",
+            "score": 0.3424090070010011,
+            "text_preview": "Published as a conference paper at ICLR 2023 with initial promising results, but learning from more high-quality human annotations will be the desiderata to further improve the performance. Scaling up"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 3.45
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 1.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 1.0
+      }
+    },
+    {
+      "question": {
+        "id": "eval_006",
+        "category": "metadata",
+        "difficulty": "medium",
+        "question": "ReAct 论文是哪一年发表的?",
+        "ground_truth": {
+          "expected_answer": "2022 年(ICLR 2023)",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "2022",
+            "ICLR 2023"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_006",
+        "category": "metadata",
+        "difficulty": "medium",
+        "question": "ReAct 论文是哪一年发表的?",
+        "ground_truth": {
+          "expected_answer": "2022 年(ICLR 2023)",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "2022",
+            "ICLR 2023"
+          ]
+        },
+        "synapse_answer": "根据 ReAct 论文片段显示，ReAct 论文发表于 **2023年**。\n\n具体来说，从论文片段的页眉信息可以看到\"Published as a conference paper at ICLR 2023\"，表明该论文作为会议论文发表在2023年的ICLR（International Conference on Learning Representations）会议上。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "27",
+            "score": 0.43072808146230424,
+            "text_preview": "Published as a conference paper at ICLR 2023 Example 3208 (gt: REFUTES) ReAct Claim: Reign Over Me is an American film made in 2010. Thought 1: I need to search for Reign Over Me and find if it is an "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.43046851938602154,
+            "text_preview": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.42653164312447606,
+            "text_preview": "Published as a conference paper at ICLR 2023 We conduct empirical evaluations ofReAct and state-of-the-art baselines on four diverse benchmarks: question answering (HotPotQA, Yang et al., 2018), fact "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "14",
+            "score": 0.42576891603202205,
+            "text_preview": "where the original label is outdated. Only ReAct is able to obtain the up-to-date answer thanks to real-world web interaction plus reasoning. During trajectory inspection, we also ﬁnd that sometimesRe"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "4",
+            "score": 0.414355747472645,
+            "text_preview": "Published as a conference paper at ICLR 2023 appear sparsely in the most relevant positions of a trajectory, so we let the language model decide the asynchronous occurrence of thoughts and actions for"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 3.61
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.875
+      }
+    },
+    {
+      "question": {
+        "id": "eval_007",
+        "category": "metadata",
+        "difficulty": "medium",
+        "question": "Transformer 论文是发表在哪个会议?",
+        "ground_truth": {
+          "expected_answer": "NIPS 2017",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "NIPS",
+            "2017"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "知识泄露幻觉高发题"
+      },
+      "result": {
+        "id": "eval_007",
+        "category": "metadata",
+        "difficulty": "medium",
+        "question": "Transformer 论文是发表在哪个会议?",
+        "ground_truth": {
+          "expected_answer": "NIPS 2017",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "NIPS",
+            "2017"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文的片段信息，Transformer 论文发表在 **NIPS 2017**（第31届神经信息处理系统会议），会议地点为美国加利福尼亚州长滩市。\n\n该论文的完整信息显示为：31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA，arXiv编号为 arXiv:1706.03762v7。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.33731552520645264,
+            "text_preview": "∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Tra"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "14",
+            "score": 0.3271568203896464,
+            "text_preview": "Exploring the limits of transfer learning with a uniﬁed text-to-text transformer. arXiv e-prints, 2019. URL https://arxiv.org/abs/1910.10683. [52] Adam Roberts, Colin Raffel, and Noam Shazeer. How muc"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "16",
+            "score": 0.3256438097061082,
+            "text_preview": "[66] Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz, Joe Davison, Sam Shleifer, Patrick von Platen, Cl"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "12",
+            "score": 0.32549288141225896,
+            "text_preview": "Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016. [39] Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. D"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "10",
+            "score": 0.32530544746765166,
+            "text_preview": "For translation tasks, the Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers. On both WMT 2014 English-to-German and WMT 2014 English-to-Fre"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 3.65
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 1.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 1.0
+      }
+    },
+    {
+      "question": {
+        "id": "eval_008",
+        "category": "metadata",
+        "difficulty": "hard",
+        "question": "RAG 论文的所有作者所在的机构有哪些?",
+        "ground_truth": {
+          "expected_answer": "Facebook AI Research, University College London, New York University",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Facebook AI Research",
+            "UCL",
+            "NYU"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_008",
+        "category": "metadata",
+        "difficulty": "hard",
+        "question": "RAG 论文的所有作者所在的机构有哪些?",
+        "ground_truth": {
+          "expected_answer": "Facebook AI Research, University College London, New York University",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Facebook AI Research",
+            "UCL",
+            "NYU"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定RAG论文所有作者的具体机构信息。\n\n检索到的论文片段主要包含RAG模型的技术内容、实验结果和代码开源信息，但没有提供论文作者及其所属机构的相关信息。要获得准确的作者机构信息，需要查看论文的标题页或作者信息部分。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.3457862906199072,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.34335447883256826,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "17",
+            "score": 0.34287363050034336,
+            "text_preview": "After submission, We have ported our code to HuggingFace Transformers [66]3, which achieves equivalent performance to the previous version but is a cleaner and easier to use implementation. This versi"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.3353354751641208,
+            "text_preview": "We follow best practice and use pairwise comparative evaluation [34]. Evaluators are shown an answer and two generated questions, one from BART and one from RAG. They are then asked to pick one of fou"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.3304945145026325,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 3.61
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.75
+      }
+    },
+    {
+      "question": {
+        "id": "eval_009",
+        "category": "metadata",
+        "difficulty": "hard",
+        "question": "Transformer 论文中,哪位作者贡献了 multi-head attention 机制?",
+        "ground_truth": {
+          "expected_answer": "Noam Shazeer",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Noam Shazeer",
+            "multi-head attention"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_009",
+        "category": "metadata",
+        "difficulty": "hard",
+        "question": "Transformer 论文中,哪位作者贡献了 multi-head attention 机制?",
+        "ground_truth": {
+          "expected_answer": "Noam Shazeer",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "Noam Shazeer",
+            "multi-head attention"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文的作者贡献说明，**Noam Shazeer** 是提出 multi-head attention 机制的作者。\n\n具体来说，根据 Transformer 论文第1页的作者贡献描述：\"Noam proposed scaled dot-product attention, multi-head attention and the parameter-free position representation and became the other person involved in nearly every detail.\"\n\n这表明 Noam Shazeer 不仅提出了 multi-head attention，还同时贡献了 scaled dot-product attention 和无参数位置表示等核心机制，并深度参与了论文的几乎每个细节。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "5",
+            "score": 0.4607320984531276,
+            "text_preview": "output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2. Multi-head attention allows the model to jointly attend to information from diff"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.4529915404907137,
+            "text_preview": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.4311254772330807,
+            "text_preview": "∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Tra"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "11",
+            "score": 0.4277805787505756,
+            "text_preview": "A structured self-attentive sentence embedding. arXiv preprint arXiv:1703.03130, 2017. [23] Minh-Thang Luong, Quoc V . Le, Ilya Sutskever, Oriol Vinyals, and Lukasz Kaiser. Multi-task sequence to sequ"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "11",
+            "score": 0.42286400605712676,
+            "text_preview": "Long short-term memory. Neural computation, 9(8):1735–1780, 1997. [14] Zhongqiang Huang and Mary Harper. Self-training PCFG grammars with latent annotations across languages. In Proceedings of the 200"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 4.92
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 1.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 1.0
+      }
+    },
+    {
+      "question": {
+        "id": "eval_010",
+        "category": "metadata",
+        "difficulty": "hard",
+        "question": "ReAct 论文有多少位作者?他们来自几个机构?",
+        "ground_truth": {
+          "expected_answer": "6 位作者,2 个机构(Princeton + Google Research)",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "6 位",
+            "Princeton",
+            "Google Research"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_010",
+        "category": "metadata",
+        "difficulty": "hard",
+        "question": "ReAct 论文有多少位作者?他们来自几个机构?",
+        "ground_truth": {
+          "expected_answer": "6 位作者,2 个机构(Princeton + Google Research)",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            1
+          ],
+          "key_facts": [
+            "6 位",
+            "Princeton",
+            "Google Research"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定ReAct论文的具体作者数量和机构信息。\n\n根据ReAct论文的致谢部分，文中提到\"We thank the support and feedback of many people from Google Brain team and Princeton NLP Group\"，这表明该研究得到了Google Brain团队和普林斯顿大学自然语言处理小组的支持和反馈。同时，论文还提到研究部分受到美国国家科学基金会资助支持（Grant No. 2107048）。\n\n然而，检索到的论文片段中并未包含作者列表或详细的机构归属信息，因此无法准确回答具体的作者数量和机构数量。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.3750658816646181,
+            "text_preview": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.37111302705588517,
+            "text_preview": "Published as a conference paper at ICLR 2023 We conduct empirical evaluations ofReAct and state-of-the-art baselines on four diverse benchmarks: question answering (HotPotQA, Yang et al., 2018), fact "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "10",
+            "score": 0.36873632679244356,
+            "text_preview": "Published as a conference paper at ICLR 2023 with initial promising results, but learning from more high-quality human annotations will be the desiderata to further improve the performance. Scaling up"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "4",
+            "score": 0.3653493484186713,
+            "text_preview": "Published as a conference paper at ICLR 2023 appear sparsely in the most relevant positions of a trajectory, so we let the language model decide the asynchronous occurrence of thoughts and actions for"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "14",
+            "score": 0.36105265416359994,
+            "text_preview": "where the original label is outdated. Only ReAct is able to obtain the up-to-date answer thanks to real-world web interaction plus reasoning. During trajectory inspection, we also ﬁnd that sometimesRe"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 6.07
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.333,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_011",
+        "category": "definition",
+        "difficulty": "easy",
+        "question": "什么是 self-attention?",
+        "ground_truth": {
+          "expected_answer": "Self-attention(自注意力)是一种注意力机制,通过关联单个序列中的不同位置来计算该序列的表示。是 Transformer 模型的核心组件。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            2,
+            3
+          ],
+          "key_facts": [
+            "self-attention",
+            "注意力机制",
+            "序列内位置关联",
+            "Transformer 核心"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_011",
+        "category": "definition",
+        "difficulty": "easy",
+        "question": "什么是 self-attention?",
+        "ground_truth": {
+          "expected_answer": "Self-attention(自注意力)是一种注意力机制,通过关联单个序列中的不同位置来计算该序列的表示。是 Transformer 模型的核心组件。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            2,
+            3
+          ],
+          "key_facts": [
+            "self-attention",
+            "注意力机制",
+            "序列内位置关联",
+            "Transformer 核心"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，self-attention（自注意力）是一种注意力机制，用于关联单个序列中的不同位置，以计算该序列的表示。\n\n具体来说，根据 Transformer 论文：\n\n1. **定义和作用**：Self-attention（有时称为 intra-attention）是一种将单个序列的不同位置相互关联的注意力机制，目的是计算序列的表示。\n\n2. **应用场景**：Self-attention 已成功应用于多种任务，包括阅读理解、抽象摘要、文本蕴含和学习任务无关的句子表示。\n\n3. **在 Transformer 中的具体实现**：\n   - 在编码器的自注意力层中，所有的键（keys）、值（values）和查询（queries）都来自同一个地方，即编码器中前一层的输出\n   - 编码器中的每个位置都可以关注到编码器前一层的所有位置\n   - 在解码器中，自注意力层允许每个位置关注到解码器中该位置及之前的所有位置\n\n4. **核心优势**：自注意力层通过常数次顺序执行的操作连接所有位置，而循环层需要 O(n) 次顺序操作。这使得学习长距离依赖关系变得更容易，因为任意两个输入和输出位置之间的路径长度被减少到常数级别。\n\n根据 Transformer 论文，这是第一个完全依赖自注意力来计算输入和输出表示的转换模型，不使用序列对齐的 RNN 或卷积。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "6",
+            "score": 0.29896453799984374,
+            "text_preview": "We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training. 4 Why Self-Attention In this section we compare vari"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.2858413606919946,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "5",
+            "score": 0.2829096946175019,
+            "text_preview": "output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2. Multi-head attention allows the model to jointly attend to information from diff"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "11",
+            "score": 0.27822474844597234,
+            "text_preview": "A structured self-attentive sentence embedding. arXiv preprint arXiv:1703.03130, 2017. [23] Minh-Thang Luong, Quoc V . Le, Ilya Sutskever, Oriol Vinyals, and Lukasz Kaiser. Multi-task sequence to sequ"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "13",
+            "score": 0.2668810841661237,
+            "text_preview": "Attention Visualizations Input-Input Layer5 It is in this spirit that a majority of American governments have passed new laws since 2009 making the registration or voting process more difficult . <EOS"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 11.95
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.5,
+        "relevance": 1.0,
+        "relevance_reason": "完整准确地回答了self-attention的定义、作用、应用场景和核心优势，内容详实且与问题高度相关",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.9
+      }
+    },
+    {
+      "question": {
+        "id": "eval_012",
+        "category": "definition",
+        "difficulty": "easy",
+        "question": "什么是 RAG?",
+        "ground_truth": {
+          "expected_answer": "RAG(Retrieval-Augmented Generation,检索增强生成)是结合检索器和生成器的模型,通过检索外部知识库辅助 LLM 回答知识密集型任务。",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            1,
+            2
+          ],
+          "key_facts": [
+            "Retrieval-Augmented Generation",
+            "检索 + 生成",
+            "外部知识库",
+            "知识密集型任务"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_012",
+        "category": "definition",
+        "difficulty": "easy",
+        "question": "什么是 RAG?",
+        "ground_truth": {
+          "expected_answer": "RAG(Retrieval-Augmented Generation,检索增强生成)是结合检索器和生成器的模型,通过检索外部知识库辅助 LLM 回答知识密集型任务。",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            1,
+            2
+          ],
+          "key_facts": [
+            "Retrieval-Augmented Generation",
+            "检索 + 生成",
+            "外部知识库",
+            "知识密集型任务"
+          ]
+        },
+        "synapse_answer": "根据 RAG 论文，RAG（Retrieval-Augmented Generation）是一种结合检索和生成的模型架构。\n\n**核心组成部分：**\n根据 RAG 论文，RAG 模型包含两个关键组件：\n1. **检索器（retriever）** pη(z|x)：给定查询 x，返回文本段落的（top-K截断）分布\n2. **生成器（generator）** pθ(yi|x,z,y1:i−1)：基于输入序列 x、检索到的文档 z 和之前生成的序列来生成目标序列\n\n**工作机制：**\n根据 RAG 论文，RAG 模型使用输入序列 x 来检索文本文档 z，并将这些文档作为额外上下文来生成目标序列 y。\n\n**主要优势：**\n根据 RAG 论文，RAG 具有以下特点：\n1. **知识更新能力**：作为非参数记忆模型，RAG 可以在测试时轻松更新知识，而像 T5 或 BART 这样的纯参数模型需要进一步训练才能更新行为\n2. **性能优势**：RAG 结合了\"闭卷\"（仅参数）方法的生成灵活性和\"开卷\"基于检索方法的性能\n3. **生成多样性**：RAG 的生成结果比 BART 更加多样化，且无需任何促进多样性的解码技术\n\n**应用效果：**\n根据 RAG 论文，RAG 在开放域问答、事实验证等任务上取得了最先进的结果，并且无需昂贵的专门预训练就能获得强劲表现。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.4234246979487426,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.4167518133444615,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.4132779684654259,
+            "text_preview": "Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20]. It is worth noting that RAG’s retriever is initialized using DPR’s retriever"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.41176714449139695,
+            "text_preview": "We follow best practice and use pairwise comparative evaluation [34]. Evaluators are shown an answer and two generated questions, one from BART and one from RAG. They are then asked to pick one of fou"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.4060905660202967,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 11.63
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.25,
+        "relevance": 1.0,
+        "relevance_reason": "AI答案完整准确地回答了什么是RAG，涵盖了核心概念、组成部分、工作机制、优势和应用效果，内容详实且与标准答案高度吻合",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.85
+      }
+    },
+    {
+      "question": {
+        "id": "eval_013",
+        "category": "definition",
+        "difficulty": "easy",
+        "question": "什么是 ReAct?",
+        "ground_truth": {
+          "expected_answer": "ReAct(Reasoning + Acting)是一种结合推理(Reasoning)和行动(Acting)的 LLM 框架,通过交替生成 thought / action / observation 完成任务。",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            1,
+            2
+          ],
+          "key_facts": [
+            "Reasoning + Acting",
+            "thought / action / observation",
+            "交替生成"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_013",
+        "category": "definition",
+        "difficulty": "easy",
+        "question": "什么是 ReAct?",
+        "ground_truth": {
+          "expected_answer": "ReAct(Reasoning + Acting)是一种结合推理(Reasoning)和行动(Acting)的 LLM 框架,通过交替生成 thought / action / observation 完成任务。",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            1,
+            2
+          ],
+          "key_facts": [
+            "Reasoning + Acting",
+            "thought / action / observation",
+            "交替生成"
+          ]
+        },
+        "synapse_answer": "根据 ReAct 论文，ReAct 是一种将推理（Reasoning）和行动（Acting）相结合的方法，用于增强大型语言模型在交互式环境中的决策能力。\n\n**核心概念：**\n根据 ReAct 论文，ReAct 的基本思想是将智能体的行动空间扩展为 Â = A ∪ L，其中 A 是原始行动空间，L 是语言空间。在语言空间中的行动被称为\"思考\"（thought）或\"推理轨迹\"（reasoning trace），这些思考不会影响外部环境，而是通过对当前上下文的推理来组织有用信息，更新上下文以支持未来的推理或行动。\n\n**主要特点：**\n根据 ReAct 论文，该方法具有以下独特特征：\n1. **直观易设计**：设计 ReAct 提示很简单，人类标注者只需在行动基础上用语言表达思考过程\n2. **通用灵活**：由于灵活的思考空间和思考-行动发生格式，ReAct 适用于多种不同的任务\n3. **性能强健**：仅从1-6个上下文示例中学习就能显示强泛化能力，在不同领域中持续优于仅推理或仅行动的基线方法\n4. **人类对齐可控**：提供可解释的序列决策和推理过程，人类可以轻松检查推理和事实正确性\n\n**应用效果：**\n根据 ReAct 论文，在实验中 ReAct 表现出色。例如，在某些任务中，即使是 ReAct 最差的试验结果（48%）也超过了其他方法的最佳试验结果。ReAct 相对于 Act 方法的性能提升范围从 33% 到 90%，平均提升 62%。\n\n根据 ReAct 论文，这是首次展示使用大型语言模型在闭环系统的交互式环境中结合推理和行动的方法。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.4494414844209625,
+            "text_preview": "In fact, even the worse ReAct trial (48%) beats the best trial of both methods. Moreover, the advantage of ReAct over Act is consistent across six controlled trials, with relative performance gain ran"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "4",
+            "score": 0.4475509677735198,
+            "text_preview": "Published as a conference paper at ICLR 2023 appear sparsely in the most relevant positions of a trajectory, so we let the language model decide the asynchronous occurrence of thoughts and actions for"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.4468432769908883,
+            "text_preview": "limited support of reasoning and acting behaviors), and perform initial ﬁnetuning experiments showing the potential of ReAct to improve with additional training data. Scaling up ReAct to train and ope"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "27",
+            "score": 0.44657525535230624,
+            "text_preview": "Published as a conference paper at ICLR 2023 Example 3208 (gt: REFUTES) ReAct Claim: Reign Over Me is an American film made in 2010. Thought 1: I need to search for Reign Over Me and find if it is an "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "14",
+            "score": 0.4407453730057534,
+            "text_preview": "where the original label is outdated. Only ReAct is able to obtain the up-to-date answer thanks to real-world web interaction plus reasoning. During trajectory inspection, we also ﬁnd that sometimesRe"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 15.26
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.9,
+        "relevance_reason": "准确回答了ReAct的核心概念并提供了丰富的细节和应用效果，但在核心机制描述上略显复杂，不如标准答案简洁明了",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.78
+      }
+    },
+    {
+      "question": {
+        "id": "eval_014",
+        "category": "definition",
+        "difficulty": "medium",
+        "question": "什么是 multi-head attention?",
+        "ground_truth": {
+          "expected_answer": "Multi-head attention(多头注意力)是将 attention 机制并行执行多次的设计,每个 'head' 关注不同子空间的信息,最后拼接输出。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            4,
+            5
+          ],
+          "key_facts": [
+            "多头",
+            "并行",
+            "不同子空间",
+            "拼接"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_014",
+        "category": "definition",
+        "difficulty": "medium",
+        "question": "什么是 multi-head attention?",
+        "ground_truth": {
+          "expected_answer": "Multi-head attention(多头注意力)是将 attention 机制并行执行多次的设计,每个 'head' 关注不同子空间的信息,最后拼接输出。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            4,
+            5
+          ],
+          "key_facts": [
+            "多头",
+            "并行",
+            "不同子空间",
+            "拼接"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，Multi-Head Attention 是一种注意力机制的扩展形式，具有以下核心特征：\n\n## 基本原理\n根据 Transformer 论文，Multi-Head Attention 不是使用单一的注意力函数处理 d_model 维度的键、值和查询，而是将查询、键和值通过 h 次不同的学习线性投影分别投影到 d_k、d_k 和 d_v 维度。\n\n## 计算过程\n根据 Transformer 论文，Multi-Head Attention 的计算公式为：\n```\nMultiHead(Q, K, V) = Concat(head₁, ..., headₕ)W^O\n其中 headᵢ = Attention(QW^Q_i, KW^K_i, VW^V_i)\n```\n\n## 参数配置\n根据 Transformer 论文，该工作中使用了 h = 8 个并行的注意力层（头）。对于每个头，使用 d_k = d_v = d_model/h = 64。由于每个头的维度减少，总计算成本与具有完整维度的单头注意力相似。\n\n## 核心优势\n根据 Transformer 论文，Multi-Head Attention 允许模型在不同位置联合关注来自不同表示子空间的信息，而单一注意力头的平均化会抑制这种能力。\n\n## 应用方式\n根据 Transformer 论文，Transformer 以三种不同方式使用多头注意力：\n1. **编码器-解码器注意力层**：查询来自前一个解码器层，键和值来自编码器输出\n2. **编码器自注意力层**：键、值和查询都来自编码器前一层的输出\n3. **解码器自注意力层**：允许解码器中每个位置关注到该位置及之前的所有位置",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "5",
+            "score": 0.4416768171009452,
+            "text_preview": "output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2. Multi-head attention allows the model to jointly attend to information from diff"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "4",
+            "score": 0.4276475757343412,
+            "text_preview": "Scaled Dot-Product Attention  Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention. (right) Multi-Head Attention consists of several attention layers running in parallel. of the values, "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "13",
+            "score": 0.3097412213471319,
+            "text_preview": "Attention Visualizations Input-Input Layer5 It is in this spirit that a majority of American governments have passed new laws since 2009 making the registration or voting process more difficult . <EOS"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "14",
+            "score": 0.3074636756652252,
+            "text_preview": "Input-Input Layer5 The Law will never be perfect , but its application should be just - this is what we are missing , in my opinion . <EOS> <pad> The Law will never be perfect , but its application sh"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.3064904407342492,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 11.0
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.5,
+        "relevance": 1.0,
+        "relevance_reason": "AI答案完整准确地解释了multi-head attention的基本原理、计算过程、参数配置、核心优势和应用方式，内容详实且符合标准答案要求",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.9
+      }
+    },
+    {
+      "question": {
+        "id": "eval_015",
+        "category": "definition",
+        "difficulty": "medium",
+        "question": "什么是 positional encoding?",
+        "ground_truth": {
+          "expected_answer": "Positional encoding(位置编码)用于给 Transformer 注入序列位置信息(因为 self-attention 本身没有位置感知)。论文用正弦/余弦函数编码。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            5,
+            6
+          ],
+          "key_facts": [
+            "位置编码",
+            "正弦余弦",
+            "self-attention 无位置感知"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_015",
+        "category": "definition",
+        "difficulty": "medium",
+        "question": "什么是 positional encoding?",
+        "ground_truth": {
+          "expected_answer": "Positional encoding(位置编码)用于给 Transformer 注入序列位置信息(因为 self-attention 本身没有位置感知)。论文用正弦/余弦函数编码。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            5,
+            6
+          ],
+          "key_facts": [
+            "位置编码",
+            "正弦余弦",
+            "self-attention 无位置感知"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，**positional encoding（位置编码）**是为了让模型能够利用序列中token的顺序信息而设计的机制。\n\n## 核心概念和必要性\n\n根据 Transformer 论文，由于该模型不包含循环结构和卷积结构，为了让模型能够利用序列的顺序，必须注入一些关于token在序列中相对或绝对位置的信息。因此，研究者在编码器和解码器堆栈底部的输入嵌入中添加了\"位置编码\"。\n\n## 技术实现\n\n根据 Transformer 论文，位置编码具有以下特点：\n\n1. **维度匹配**：位置编码与嵌入向量具有相同的维度 d_model，这样两者可以直接相加\n\n2. **正弦余弦函数**：该论文使用不同频率的正弦和余弦函数：\n   - PE(pos,2i) = sin(pos/10000^(2i/d_model))\n   - PE(pos,2i+1) = cos(pos/10000^(2i/d_model))\n   \n   其中 pos 是位置，i 是维度\n\n3. **设计原理**：每个位置编码维度对应一个正弦波，波长形成从 2π 到 10000·2π 的几何级数\n\n## 设计优势\n\n根据 Transformer 论文，选择这种函数的原因包括：\n\n- **相对位置学习**：假设这种设计能让模型更容易学习基于相对位置的注意力，因为对于任何固定偏移 k，PE_pos+k 可以表示为 PE_pos 的线性函数\n\n- **泛化能力**：与学习式位置嵌入相比，正弦版本可能允许模型外推到比训练时遇到的序列更长的序列长度\n\n根据 Transformer 论文的实验结果，正弦位置编码与学习式位置嵌入产生了几乎相同的结果。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "6",
+            "score": 0.3066143626591885,
+            "text_preview": "Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations for different layer types. n is the sequence length, d is the representation dimension, k is the kernel "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "3",
+            "score": 0.27412487852076717,
+            "text_preview": "Figure 1: The Transformer - model architecture. The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "5",
+            "score": 0.26215190248845355,
+            "text_preview": "We implement this inside of scaled dot-product attention by masking out (setting to −∞) all values in the input of the softmax which correspond to illegal connections. See Figure 2. 3.3 Position-wise "
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "4",
+            "score": 0.260416488418933,
+            "text_preview": "minimize the negative marginal log-likelihood of each target, ∑ j−log p(yj|xj) using stochastic gradient descent with Adam [28]. Updating the document encoder BERTd during training is costly as it req"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.2550901907052598,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 12.08
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.667,
+        "relevance": 1.0,
+        "relevance_reason": "完整准确地回答了位置编码的定义、必要性、技术实现和设计优势，包含了标准答案的所有要点并提供了丰富的技术细节",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.933
+      }
+    },
+    {
+      "question": {
+        "id": "eval_016",
+        "category": "definition",
+        "difficulty": "medium",
+        "question": "RAG 的 retriever 和 generator 分别是什么?",
+        "ground_truth": {
+          "expected_answer": "Retriever 用 DPR(Dense Passage Retrieval)从外部知识库检索相关文档;Generator 用 BART(基于 Transformer 的 seq2seq 模型)生成最终答案。",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            2,
+            3
+          ],
+          "key_facts": [
+            "DPR",
+            "Dense Passage Retrieval",
+            "BART",
+            "seq2seq"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_016",
+        "category": "definition",
+        "difficulty": "medium",
+        "question": "RAG 的 retriever 和 generator 分别是什么?",
+        "ground_truth": {
+          "expected_answer": "Retriever 用 DPR(Dense Passage Retrieval)从外部知识库检索相关文档;Generator 用 BART(基于 Transformer 的 seq2seq 模型)生成最终答案。",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            2,
+            3
+          ],
+          "key_facts": [
+            "DPR",
+            "Dense Passage Retrieval",
+            "BART",
+            "seq2seq"
+          ]
+        },
+        "synapse_answer": "根据RAG论文，RAG模型包含两个核心组件：\n\n## Retriever（检索器）\n根据RAG论文，检索器组件pη(z|x)基于DPR（Dense Passage Retrieval）架构。具体特点包括：\n\n- **架构**：采用双编码器（bi-encoder）架构\n- **计算方式**：pη(z|x) ∝ exp(d(z)⊤q(x))，其中d(z)是文档的密集表示，q(x)是查询表示\n- **编码器**：使用两个基于BERTBASE的编码器，分别用于文档编码和查询编码\n- **功能**：给定查询x，返回top-K个文本段落的概率分布\n- **初始化**：使用在TriviaQA和Natural Questions上预训练的DPR双编码器进行初始化\n\n## Generator（生成器）\n根据RAG论文，生成器组件pθ(yi|x,z,y1:i−1)的特点包括：\n\n- **模型架构**：使用BART-large作为生成器，这是一个预训练的序列到序列Transformer模型\n- **参数规模**：包含400M个参数\n- **输入处理**：通过简单拼接的方式将输入x与检索到的内容z结合\n- **功能**：基于输入查询、检索到的文档和之前生成的tokens来生成下一个token\n\n论文指出，RAG模型将这两个组件结合，使生成器能够在产生答案时从多个文档中选择内容，并且可以通过替换非参数记忆（文档索引）来更新模型的知识。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "3",
+            "score": 0.44014429453427917,
+            "text_preview": "This allows the generator to choose content from several documents when producing an answer. Concretely, the top K documents are retrieved using the retriever, and then the generator produces a distri"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.43542936593581144,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.4162461474050606,
+            "text_preview": "Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20]. It is worth noting that RAG’s retriever is initialized using DPR’s retriever"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.41342029946499836,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.40672455061340573,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 10.55
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.75,
+        "relevance": 1.0,
+        "relevance_reason": "AI答案完整准确地回答了问题，详细说明了Retriever使用DPR架构和Generator使用BART模型，并提供了丰富的技术细节",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.95
+      }
+    },
+    {
+      "question": {
+        "id": "eval_017",
+        "category": "definition",
+        "difficulty": "medium",
+        "question": "ReAct 的 thought、action、observation 各是什么意思?",
+        "ground_truth": {
+          "expected_answer": "Thought:LLM 的推理过程(为下一步行动制定计划);Action:调用外部工具的具体动作(如搜索、查询);Observation:工具返回的结果。三者交替形成循环。",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            2,
+            3
+          ],
+          "key_facts": [
+            "Thought 推理",
+            "Action 行动",
+            "Observation 观察",
+            "交替循环"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_017",
+        "category": "definition",
+        "difficulty": "medium",
+        "question": "ReAct 的 thought、action、observation 各是什么意思?",
+        "ground_truth": {
+          "expected_answer": "Thought:LLM 的推理过程(为下一步行动制定计划);Action:调用外部工具的具体动作(如搜索、查询);Observation:工具返回的结果。三者交替形成循环。",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            2,
+            3
+          ],
+          "key_facts": [
+            "Thought 推理",
+            "Action 行动",
+            "Observation 观察",
+            "交替循环"
+          ]
+        },
+        "synapse_answer": "根据 ReAct 论文，这三个概念的含义如下：\n\n## Thought（思考）\n根据 ReAct 论文，thought 是指\"语言空间中的动作\"（An action âₜ ∈ L in the language space），也被称为\"推理轨迹\"（reasoning trace）。Thought 不会影响外部环境，因此不会产生观察反馈。相反，thought 的目的是通过对当前上下文 cₜ 进行推理来组合有用信息，并更新上下文 cₜ₊₁ = (cₜ, âₜ) 以支持未来的推理或行动。\n\n## Action（动作）\n根据 ReAct 论文，action 是智能体在时间步 t 根据某种策略 π(aₜ|cₜ) 采取的行动 aₜ ∈ A。在 ReAct 框架中，智能体的动作空间被扩展为 Â = A ∪ L，其中 A 是原始动作空间，L 是语言空间。Action 会影响外部环境并产生观察反馈。\n\n## Observation（观察）\n根据 ReAct 论文，observation 是智能体在时间步 t 从环境中接收到的观察 oₜ ∈ O。这是智能体感知环境状态的方式，为后续的推理和决策提供信息输入。\n\n## 三者关系\n根据 ReAct 论文，这三个要素以交错的方式工作：ReAct 提示大语言模型以交错的方式生成与任务相关的言语推理轨迹和动作，使模型能够执行动态推理来创建、维护和调整高级行动计划（reason to act），同时也与外部环境交互以将额外信息纳入推理（act to reason）。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.5166505308149757,
+            "text_preview": "limited support of reasoning and acting behaviors), and perform initial ﬁnetuning experiments showing the potential of ReAct to improve with additional training data. Scaling up ReAct to train and ope"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "4",
+            "score": 0.47220539148731705,
+            "text_preview": "Published as a conference paper at ICLR 2023 appear sparsely in the most relevant positions of a trajectory, so we let the language model decide the asynchronous occurrence of thoughts and actions for"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.45947045589665786,
+            "text_preview": "In fact, even the worse ReAct trial (48%) beats the best trial of both methods. Moreover, the advantage of ReAct over Act is consistent across six controlled trials, with relative performance gain ran"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.44738045984933367,
+            "text_preview": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.4452712905740374,
+            "text_preview": "In contrast, the reasoning traces in ReAct for decision making is ﬂexible and sparse, allowing diverse reasoning types (see Section 2) to be induced for different tasks. To demonstrate the differences"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 11.59
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 1.0,
+        "relevance_reason": "完整准确地解释了ReAct框架中thought、action、observation三个概念的含义，并详细说明了它们的交互关系，内容全面且符合标准答案要求",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.8
+      }
+    },
+    {
+      "question": {
+        "id": "eval_018",
+        "category": "definition",
+        "difficulty": "hard",
+        "question": "什么是 scaled dot-product attention?它和 additive attention 的区别?",
+        "ground_truth": {
+          "expected_answer": "Scaled dot-product attention 用 QK^T/√d_k 计算注意力分数(用 √d_k 缩放避免梯度消失)。比 additive attention 更快(矩阵乘法),但在 d_k 大时未缩放会有梯度问题。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            4
+          ],
+          "key_facts": [
+            "dot-product",
+            "√d_k 缩放",
+            "比 additive 快",
+            "梯度问题"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_018",
+        "category": "definition",
+        "difficulty": "hard",
+        "question": "什么是 scaled dot-product attention?它和 additive attention 的区别?",
+        "ground_truth": {
+          "expected_answer": "Scaled dot-product attention 用 QK^T/√d_k 计算注意力分数(用 √d_k 缩放避免梯度消失)。比 additive attention 更快(矩阵乘法),但在 d_k 大时未缩放会有梯度问题。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            4
+          ],
+          "key_facts": [
+            "dot-product",
+            "√d_k 缩放",
+            "比 additive 快",
+            "梯度问题"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，**Scaled Dot-Product Attention** 是一种特定的注意力机制，其核心特征如下：\n\n## Scaled Dot-Product Attention 的定义\n\n根据 Transformer 论文，Scaled Dot-Product Attention 的输入包括维度为 dk 的查询(queries)和键(keys)，以及维度为 dv 的值(values)。其计算过程是：计算查询与所有键的点积，除以 √dk 进行缩放，然后应用 softmax 函数获得值的权重。\n\n数学公式为：\n```\nAttention(Q, K, V) = softmax(QK^T / √dk)V\n```\n\n## 与 Additive Attention 的区别\n\n根据 Transformer 论文，两种注意力机制的主要区别包括：\n\n### 1. 计算方式差异\n- **Dot-product attention**：使用矩阵乘法计算兼容性函数\n- **Additive attention**：使用带有单隐藏层的前馈网络计算兼容性函数\n\n### 2. 效率差异\n根据论文，虽然两者在理论复杂度上相似，但点积注意力在实践中更快且更节省空间，因为它可以使用高度优化的矩阵乘法代码实现。\n\n### 3. 性能差异\n根据论文，当 dk 值较小时，两种机制性能相似；但当 dk 值较大时，additive attention 的性能优于未缩放的 dot-product attention。\n\n### 4. 缩放因子的必要性\n根据论文，Scaled Dot-Product Attention 引入 1/√dk 缩放因子的原因是：当 dk 值较大时，点积的幅度会变得很大，将 softmax 函数推入梯度极小的区域。论文通过数学分析指出，假设 q 和 k 的分量是均值为0、方差为1的独立随机变量，则它们的点积均值为0，方差为 dk，因此需要缩放来抵消这种效应。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "4",
+            "score": 0.5377690844886986,
+            "text_preview": "Scaled Dot-Product Attention  Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention. (right) Multi-Head Attention consists of several attention layers running in parallel. of the values, "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "5",
+            "score": 0.3633455845698149,
+            "text_preview": "output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2. Multi-head attention allows the model to jointly attend to information from diff"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "5",
+            "score": 0.3313410587990274,
+            "text_preview": "We implement this inside of scaled dot-product attention by masking out (setting to −∞) all values in the input of the softmax which correspond to illegal connections. See Figure 2. 3.3 Position-wise "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "4",
+            "score": 0.3151143270411935,
+            "text_preview": "On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional 4To illustrate why the dot products get large, assume that t"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "3",
+            "score": 0.31262902165918294,
+            "text_preview": "Figure 1: The Transformer - model architecture. The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 11.82
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.25,
+        "relevance": 1.0,
+        "relevance_reason": "完整准确地回答了scaled dot-product attention的定义、公式和与additive attention在计算方式、效率、性能等方面的区别，并详细解释了缩放因子的数学原理",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.85
+      }
+    },
+    {
+      "question": {
+        "id": "eval_019",
+        "category": "definition",
+        "difficulty": "hard",
+        "question": "RAG 的两种变体:RAG-Sequence 和 RAG-Token 的区别?",
+        "ground_truth": {
+          "expected_answer": "RAG-Sequence:对每个文档生成完整序列,再边缘化(marginalize);RAG-Token:每个 token 都可能来自不同文档(更细粒度的混合)。",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            3,
+            4
+          ],
+          "key_facts": [
+            "RAG-Sequence",
+            "RAG-Token",
+            "完整序列 vs 单 token",
+            "边缘化"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_019",
+        "category": "definition",
+        "difficulty": "hard",
+        "question": "RAG 的两种变体:RAG-Sequence 和 RAG-Token 的区别?",
+        "ground_truth": {
+          "expected_answer": "RAG-Sequence:对每个文档生成完整序列,再边缘化(marginalize);RAG-Token:每个 token 都可能来自不同文档(更细粒度的混合)。",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            3,
+            4
+          ],
+          "key_facts": [
+            "RAG-Sequence",
+            "RAG-Token",
+            "完整序列 vs 单 token",
+            "边缘化"
+          ]
+        },
+        "synapse_answer": "根据RAG论文，RAG-Sequence和RAG-Token这两种变体的主要区别在于它们处理检索文档的方式不同：\n\n## RAG-Sequence模型\n\n根据RAG论文，RAG-Sequence模型使用**同一个检索到的文档来生成完整的序列**。具体来说：\n- 将检索到的文档视为单一潜在变量，通过top-K近似来边际化得到seq2seq概率\n- 使用检索器检索top K个文档，生成器为每个文档产生输出序列概率，然后进行边际化\n- 数学表达为：pRAG-Sequence(y|x) ≈ ∑z∈top-k(p(·|x)) pη(z|x)pθ(y|x,z)\n\n## RAG-Token模型\n\n根据RAG论文，RAG-Token模型可以**为每个目标token绘制不同的潜在文档并相应地边际化**。这意味着：\n- 生成器在产生答案时可以从多个文档中选择内容\n- 每个token的生成可以基于不同的检索文档\n\n## 性能差异\n\n根据RAG论文的实验结果：\n- 在Jeopardy问题生成任务中，RAG-Token表现优于RAG-Sequence\n- 在生成多样性方面，RAG-Sequence的生成结果比RAG-Token更加多样化\n- RAG-Token在需要结合多个文档信息的任务中表现更好，因为它可以生成结合多个文档内容的响应\n\n根据RAG论文，这两种变体在解码过程中也采用不同的策略，RAG-Token可以使用标准的束搜索解码器，而RAG-Sequence需要更复杂的\"彻底解码\"过程。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "3",
+            "score": 0.41451522539004104,
+            "text_preview": "by θthat generates a current token based on a context of the previous i−1 tokens y1:i−1, the original input xand a retrieved passage z. To train the retriever and generator end-to-end, we treat the re"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.390559529255934,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "4",
+            "score": 0.36894830341027585,
+            "text_preview": "minimize the negative marginal log-likelihood of each target, ∑ j−log p(yj|xj) using stochastic gradient descent with Adam [28]. Updating the document encoder BERTd during training is costly as it req"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "8",
+            "score": 0.3656546956254256,
+            "text_preview": "Table 4: Human assessments for the Jeopardy Question Generation Task. Factuality Speciﬁcity BART better 7.1% 16.8% RAG better 42.7% 37.4% Both good 11.7% 11.8% Both poor 17.7% 6.9% No majority 20.8% 2"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "6",
+            "score": 0.3623539659095103,
+            "text_preview": "Furthermore, RAG can generate correct answers even when the correct answer is not in any retrieved document, achieving 11.8% accuracy in such cases for NQ, where an extractive model would score 0%. 4."
+          }
+        ],
+        "error": null,
+        "duration_seconds": 12.08
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.5,
+        "relevance": 0.9,
+        "relevance_reason": "准确回答了两种变体的核心区别，并提供了丰富的技术细节和性能对比，但在表述上略显冗长",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.88
+      }
+    },
+    {
+      "question": {
+        "id": "eval_020",
+        "category": "definition",
+        "difficulty": "hard",
+        "question": "ReAct 中,如果只保留 reasoning(去掉 acting),效果会怎样?",
+        "ground_truth": {
+          "expected_answer": "只保留 reasoning(就是 CoT,Chain-of-Thought)在某些任务上有用,但缺少外部信息源会导致幻觉。ReAct 论文的消融实验显示,acting + reasoning 比纯 CoT 在知识密集型任务上更好。",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            4,
+            5
+          ],
+          "key_facts": [
+            "CoT",
+            "消融实验",
+            "acting + reasoning 优于纯 CoT",
+            "知识密集型任务"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_020",
+        "category": "definition",
+        "difficulty": "hard",
+        "question": "ReAct 中,如果只保留 reasoning(去掉 acting),效果会怎样?",
+        "ground_truth": {
+          "expected_answer": "只保留 reasoning(就是 CoT,Chain-of-Thought)在某些任务上有用,但缺少外部信息源会导致幻觉。ReAct 论文的消融实验显示,acting + reasoning 比纯 CoT 在知识密集型任务上更好。",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            4,
+            5
+          ],
+          "key_facts": [
+            "CoT",
+            "消融实验",
+            "acting + reasoning 优于纯 CoT",
+            "知识密集型任务"
+          ]
+        },
+        "synapse_answer": "根据ReAct论文的片段，虽然没有直接测试\"只保留reasoning去掉acting\"的情况，但可以从以下几个角度分析：\n\n**从ReAct与Act方法的对比来看：**\n根据ReAct论文，ReAct相比于纯粹的Act方法表现显著更好。论文显示\"即使是ReAct最差的试验结果(48%)也超过了两种对比方法的最佳结果\"，且\"ReAct相对于Act的性能提升范围从33%到90%，平均为62%\"。\n\n**Reasoning的核心价值：**\n根据ReAct论文，reasoning traces的作用是\"通过推理来指导行动的价值，特别是在综合最终答案方面\"。论文指出，没有任何思考过程的Act方法\"无法正确地将目标分解为更小的子目标，或者会失去对环境当前状态的跟踪\"。\n\n**ReAct设计的互补性：**\n根据ReAct论文，该方法的核心思想是\"允许模型执行动态推理来创建、维护和调整用于行动的高级计划(reason to act)，同时也与外部环境交互以将额外信息纳入推理(act to reason)\"。这表明reasoning和acting在ReAct中是相互依赖的。\n\n**结论：**\n基于现有片段，如果只保留reasoning而去掉acting，可能会失去与外部环境交互获取信息的能力，从而影响推理的准确性和完整性。不过，论文片段中没有直接的实验数据来量化这种影响的具体程度。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.4604580348657792,
+            "text_preview": "In fact, even the worse ReAct trial (48%) beats the best trial of both methods. Moreover, the advantage of ReAct over Act is consistent across six controlled trials, with relative performance gain ran"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "5",
+            "score": 0.4524754379296573,
+            "text_preview": "More details are in Appendix B.1. 3.3 R ESULTS AND OBSERVATIONS ReAct outperforms Act consistently Table 1 shows HotpotQA and Fever results using PaLM- 540B as the base model with different prompting "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.44548793813708276,
+            "text_preview": "In contrast, the reasoning traces in ReAct for decision making is ﬂexible and sparse, allowing diverse reasoning types (see Section 2) to be induced for different tasks. To demonstrate the differences"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.4413123388870438,
+            "text_preview": "limited support of reasoning and acting behaviors), and perform initial ﬁnetuning experiments showing the potential of ReAct to improve with additional training data. Scaling up ReAct to train and ope"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.43530810159256594,
+            "text_preview": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 12.37
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.6,
+        "relevance_reason": "答案正确识别了reasoning的价值和ReAct的互补性设计，但没有直接回答核心问题（只保留reasoning就是CoT），也缺少关于幻觉问题和消融实验结果的关键信息",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.72
+      }
+    },
+    {
+      "question": {
+        "id": "eval_021",
+        "category": "detail",
+        "difficulty": "easy",
+        "question": "Transformer 论文中 attention head 的数量是多少?",
+        "ground_truth": {
+          "expected_answer": "8 个 attention heads(h = 8)。base 模型用 8 个,big 模型用 16 个。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            4,
+            5
+          ],
+          "key_facts": [
+            "8",
+            "base 模型",
+            "16 (big)"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "strict"
+        }
+      },
+      "result": {
+        "id": "eval_021",
+        "category": "detail",
+        "difficulty": "easy",
+        "question": "Transformer 论文中 attention head 的数量是多少?",
+        "ground_truth": {
+          "expected_answer": "8 个 attention heads(h = 8)。base 模型用 8 个,big 模型用 16 个。",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            4,
+            5
+          ],
+          "key_facts": [
+            "8",
+            "base 模型",
+            "16 (big)"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，attention head 的数量是 **8 个**。\n\n论文中明确提到：\"In this work we employ h = 8 parallel attention layers, or heads.\"（在这项工作中，我们使用了 h = 8 个并行的注意力层，或称为头）\n\n此外，论文还说明了每个头的维度设置：对于这 8 个头中的每一个，使用 dk = dv = dmodel/h = 64。由于每个头的维度减少了，总的计算成本与使用全维度的单头注意力相似。\n\n多头注意力机制允许模型在不同位置联合关注来自不同表示子空间的信息，而单个注意力头的平均化会抑制这种能力。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "5",
+            "score": 0.4769577405538343,
+            "text_preview": "output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2. Multi-head attention allows the model to jointly attend to information from diff"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.4245681379829959,
+            "text_preview": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.4156712261844107,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "4",
+            "score": 0.41530626617296845,
+            "text_preview": "Scaled Dot-Product Attention  Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention. (right) Multi-Head Attention consists of several attention layers running in parallel. of the values, "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "3",
+            "score": 0.4140974084252559,
+            "text_preview": "Figure 1: The Transformer - model architecture. The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 5.87
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.333,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_022",
+        "category": "detail",
+        "difficulty": "easy",
+        "question": "Transformer base 模型有多少层?",
+        "ground_truth": {
+          "expected_answer": "Encoder 6 层,Decoder 6 层(N = 6)",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            3,
+            4
+          ],
+          "key_facts": [
+            "6 层",
+            "encoder",
+            "decoder",
+            "N = 6"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "strict"
+        }
+      },
+      "result": {
+        "id": "eval_022",
+        "category": "detail",
+        "difficulty": "easy",
+        "question": "Transformer base 模型有多少层?",
+        "ground_truth": {
+          "expected_answer": "Encoder 6 层,Decoder 6 层(N = 6)",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            3,
+            4
+          ],
+          "key_facts": [
+            "6 层",
+            "encoder",
+            "decoder",
+            "N = 6"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，Transformer base 模型有 **6 层**。\n\n具体来说：\n- **编码器（Encoder）**：由 6 个相同层的堆叠组成（N = 6）\n- **解码器（Decoder）**：同样由 6 个相同层的堆叠组成（N = 6）\n\n论文中明确指出：\"The encoder is composed of a stack of N = 6 identical layers\" 和 \"The decoder is also composed of a stack of N = 6 identical layers\"。\n\n在模型变体实验表格中也可以看到，base 模型的层数 N 参数为 6，这进一步确认了 Transformer base 模型的层数配置。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.2916594351891565,
+            "text_preview": "We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point ca"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.2774836934168713,
+            "text_preview": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Liste"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "6",
+            "score": 0.2733444192320066,
+            "text_preview": "Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations for different layer types. n is the sequence length, d is the representation dimension, k is the kernel "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "3",
+            "score": 0.2718627732057241,
+            "text_preview": "Figure 1: The Transformer - model architecture. The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.26689580365651955,
+            "text_preview": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model B"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 4.68
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 1.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 1.0
+      }
+    },
+    {
+      "question": {
+        "id": "eval_023",
+        "category": "detail",
+        "difficulty": "easy",
+        "question": "Transformer base 模型的 d_model 是多少?",
+        "ground_truth": {
+          "expected_answer": "d_model = 512(base 模型),1024(big 模型)",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            4,
+            5
+          ],
+          "key_facts": [
+            "512",
+            "d_model",
+            "1024 (big)"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "strict"
+        }
+      },
+      "result": {
+        "id": "eval_023",
+        "category": "detail",
+        "difficulty": "easy",
+        "question": "Transformer base 模型的 d_model 是多少?",
+        "ground_truth": {
+          "expected_answer": "d_model = 512(base 模型),1024(big 模型)",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            4,
+            5
+          ],
+          "key_facts": [
+            "512",
+            "d_model",
+            "1024 (big)"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文中的 Table 3，Transformer base 模型的 d_model 是 **512**。\n\n在该表格中明确显示了 base 模型的配置参数：N=6, d_model=512, d_ff=2048, h=8, d_k=64, d_v=64, P_drop=0.1, ε_ls=0.1。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.3317510900372347,
+            "text_preview": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Liste"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.29987717524965435,
+            "text_preview": "We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point ca"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.2865692656331504,
+            "text_preview": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.2849314768660835,
+            "text_preview": "We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3. In Table 3 rows (A), we vary the number of attention heads and the attention"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "6",
+            "score": 0.27906552710635574,
+            "text_preview": "Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations for different layer types. n is the sequence length, d is the representation dimension, k is the kernel "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 3.24
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.667,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.917
+      }
+    },
+    {
+      "question": {
+        "id": "eval_024",
+        "category": "detail",
+        "difficulty": "medium",
+        "question": "Transformer 在 WMT 2014 English-to-German 任务上的 BLEU 分数是多少?",
+        "ground_truth": {
+          "expected_answer": "Big 模型 28.4 BLEU(state-of-the-art),Base 模型 27.3 BLEU",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            8,
+            9
+          ],
+          "key_facts": [
+            "28.4",
+            "BLEU",
+            "Big 模型",
+            "WMT 2014"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "strict"
+        }
+      },
+      "result": {
+        "id": "eval_024",
+        "category": "detail",
+        "difficulty": "medium",
+        "question": "Transformer 在 WMT 2014 English-to-German 任务上的 BLEU 分数是多少?",
+        "ground_truth": {
+          "expected_answer": "Big 模型 28.4 BLEU(state-of-the-art),Base 模型 27.3 BLEU",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            8,
+            9
+          ],
+          "key_facts": [
+            "28.4",
+            "BLEU",
+            "Big 模型",
+            "WMT 2014"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，Transformer 在 WMT 2014 English-to-German 任务上取得了以下 BLEU 分数：\n\n- **Transformer (base model)**: 27.3 BLEU\n- **Transformer (big)**: 28.4 BLEU\n\n根据论文描述，big transformer 模型的表现尤为突出，其 28.4 的 BLEU 分数超越了此前所有报告的最佳模型（包括集成模型）超过 2.0 BLEU 点，建立了新的最先进水平。该模型在 8 个 P100 GPU 上训练了 3.5 天。值得注意的是，即使是基础模型也超越了所有此前发布的模型和集成模型，且训练成本仅为竞争模型的一小部分。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.44748679729337726,
+            "text_preview": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model B"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.4382390216039324,
+            "text_preview": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.40228410909676093,
+            "text_preview": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Liste"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.3627138787044466,
+            "text_preview": "We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3. In Table 3 rows (A), we vary the number of attention heads and the attention"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "10",
+            "score": 0.345295549089023,
+            "text_preview": "For translation tasks, the Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers. On both WMT 2014 English-to-German and WMT 2014 English-to-Fre"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 6.18
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.75,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.938
+      }
+    },
+    {
+      "question": {
+        "id": "eval_025",
+        "category": "detail",
+        "difficulty": "medium",
+        "question": "RAG 用的检索器(retriever)的 hidden dimension 是多少?",
+        "ground_truth": {
+          "expected_answer": "DPR 的 encoder 输出 768 维向量(基于 BERT-base)",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            3
+          ],
+          "key_facts": [
+            "768",
+            "BERT-base",
+            "DPR"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "等你看 PDF 确认数字"
+      },
+      "result": {
+        "id": "eval_025",
+        "category": "detail",
+        "difficulty": "medium",
+        "question": "RAG 用的检索器(retriever)的 hidden dimension 是多少?",
+        "ground_truth": {
+          "expected_answer": "DPR 的 encoder 输出 768 维向量(基于 BERT-base)",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            3
+          ],
+          "key_facts": [
+            "768",
+            "BERT-base",
+            "DPR"
+          ]
+        },
+        "synapse_answer": "根据RAG论文，检索器的hidden dimension是728维。\n\n具体来说，根据RAG论文第19页的内容，非参数记忆索引包含21M个728维的向量，总共包含15.3B个数值。这些向量可以以8位浮点精度存储以管理内存和磁盘占用空间。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.36259196737871074,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.3511087233327125,
+            "text_preview": "Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20]. It is worth noting that RAG’s retriever is initialized using DPR’s retriever"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "19",
+            "score": 0.34051072544474176,
+            "text_preview": "Table 7: Number of instances in the datasets used. *A hidden subset of this data is used for evaluation Task Train Development Test Natural Questions 79169 8758 3611 TriviaQA 78786 8838 11314 WebQuest"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "8",
+            "score": 0.3367173758667926,
+            "text_preview": "This shows we can update RAG’s world knowledge by simply replacing its non-parametric memory. Effect of Retrieving more documents Models are trained with either 5 or 10 retrieved latent documents, and"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "18",
+            "score": 0.33077002140667155,
+            "text_preview": "G Parameters Our RAG models contain the trainable parameters for the BERT-base query and document encoder of DPR, with 110M parameters each (although we do not train the document encoder ourselves) an"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 4.2
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.75
+      }
+    },
+    {
+      "question": {
+        "id": "eval_026",
+        "category": "detail",
+        "difficulty": "medium",
+        "question": "Transformer 的训练用了多少个 GPU,跑了多久?",
+        "ground_truth": {
+          "expected_answer": "Base 模型:8 块 P100 GPU 训练 12 小时;Big 模型:8 块 P100 GPU 训练 3.5 天",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            7,
+            8
+          ],
+          "key_facts": [
+            "8 块 P100",
+            "12 小时 (base)",
+            "3.5 天 (big)"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_026",
+        "category": "detail",
+        "difficulty": "medium",
+        "question": "Transformer 的训练用了多少个 GPU,跑了多久?",
+        "ground_truth": {
+          "expected_answer": "Base 模型:8 块 P100 GPU 训练 12 小时;Big 模型:8 块 P100 GPU 训练 3.5 天",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            7,
+            8
+          ],
+          "key_facts": [
+            "8 块 P100",
+            "12 小时 (base)",
+            "3.5 天 (big)"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，训练配置如下：\n\n**GPU 数量和训练时间：**\n- **硬件配置**：使用 8 块 NVIDIA P100 GPU 在一台机器上进行训练\n- **Base 模型**：训练 100,000 步，总计约 12 小时，每个训练步耗时约 0.4 秒\n- **Big 模型**：训练 300,000 步，总计 3.5 天，每个训练步耗时约 1.0 秒\n\n**具体成果：**\n- Big Transformer 模型在 WMT 2014 英德翻译任务上达到了 28.4 的 BLEU 分数，创造了新的最优结果\n- 即使是 Base 模型也超越了之前所有已发表的模型和集成模型，且训练成本仅为竞争模型的一小部分\n\n论文特别强调，Transformer 能够在 8 块 P100 GPU 上仅训练 12 小时就达到翻译质量的新高度，显著提升了训练效率。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.44489369205411944,
+            "text_preview": "We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point ca"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "7",
+            "score": 0.39482540005268735,
+            "text_preview": "Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens. 5.2 Har"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.39283536320206713,
+            "text_preview": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.3305532555718442,
+            "text_preview": "1 Introduction Recurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks in particular, have been firmly established as state of the art approaches in sequence mod"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.3252319671752991,
+            "text_preview": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model B"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 8.19
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.333,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_027",
+        "category": "detail",
+        "difficulty": "medium",
+        "question": "ReAct 在 HotpotQA 上的准确率是多少?",
+        "ground_truth": {
+          "expected_answer": "ReAct(配合工具调用)在 HotpotQA 上的 EM(Exact Match)约为 35-40%,优于纯 CoT 基线",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            5,
+            6
+          ],
+          "key_facts": [
+            "HotpotQA",
+            "EM 准确率",
+            "优于 CoT"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "等你看 PDF 确认数字"
+      },
+      "result": {
+        "id": "eval_027",
+        "category": "detail",
+        "difficulty": "medium",
+        "question": "ReAct 在 HotpotQA 上的准确率是多少?",
+        "ground_truth": {
+          "expected_answer": "ReAct(配合工具调用)在 HotpotQA 上的 EM(Exact Match)约为 35-40%,优于纯 CoT 基线",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [
+            5,
+            6
+          ],
+          "key_facts": [
+            "HotpotQA",
+            "EM 准确率",
+            "优于 CoT"
+          ]
+        },
+        "synapse_answer": "根据 ReAct 论文的实验结果，ReAct 在 HotpotQA 上的准确率（exact match）为 **27.4%**。\n\n具体来说：\n\n1. **与其他方法的对比表现**：根据论文片段，ReAct 在 HotpotQA 上略低于 CoT 方法（27.4 vs. 29.4），但明显优于单纯的 Act 方法。\n\n2. **跨模型的一致性**：论文还报告了不同语言模型的结果，使用 GPT-3 (text-davinci-002) 时，ReAct 在 HotpotQA 上的准确率为 30.8%，高于使用 PaLM-540B 的结果（29.4%）。\n\n3. **组合方法的改进**：当 ReAct 与 CoT-SC（Chain-of-Thought Self-Consistency）结合使用时（ReAct→CoT-SC），在 HotpotQA 上取得了最佳的提示学习效果。\n\n需要注意的是，这些结果都是基于 PaLM-540B 作为基础模型，使用精确匹配（exact match）作为评估指标得出的。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "5",
+            "score": 0.4411572498927953,
+            "text_preview": "More details are in Appendix B.1. 3.3 R ESULTS AND OBSERVATIONS ReAct outperforms Act consistently Table 1 shows HotpotQA and Fever results using PaLM- 540B as the base model with different prompting "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "6",
+            "score": 0.43448332186699323,
+            "text_preview": "Published as a conference paper at ICLR 2023 Type Deﬁnition ReAct CoT Success True positive Correct reasoning trace and facts 94% 86% False positive Hallucinated reasoning trace or facts 6% 14% Failur"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "6",
+            "score": 0.42743275527060237,
+            "text_preview": "we note that there is one frequent error pattern speciﬁc to ReAct, in which the model repetitively generates the previous thoughts and actions, and we categorize it as part of “reasoning error” as the"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.4153032878669699,
+            "text_preview": "Published as a conference paper at ICLR 2023 Method Pick Clean Heat Cool Look Pick 2 All Act(best of 6) 88 42 74 67 72 41 45 ReAct(avg) 65 39 83 76 55 24 57 ReAct(best of 6) 92 58 96 86 78 41 71 ReAct"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "14",
+            "score": 0.4049161039236813,
+            "text_preview": "Published as a conference paper at ICLR 2023 A A DDITIONAL RESULTS A.1 GPT-3 E XPERIMENTS PaLM-540B GPT-3 HotpotQA (exact match) 29.4 30.8 ALFWorld (success rate %) 70.9 78.4 Table 5: ReAct prompting "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.47
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.333,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_028",
+        "category": "detail",
+        "difficulty": "hard",
+        "question": "Transformer 的 Adam 优化器参数是什么?",
+        "ground_truth": {
+          "expected_answer": "Adam,β1 = 0.9,β2 = 0.98,ε = 1e-9。学习率用 warmup_steps = 4000 的 noam schedule",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            7
+          ],
+          "key_facts": [
+            "β1 = 0.9",
+            "β2 = 0.98",
+            "ε = 1e-9",
+            "warmup 4000"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "strict"
+        }
+      },
+      "result": {
+        "id": "eval_028",
+        "category": "detail",
+        "difficulty": "hard",
+        "question": "Transformer 的 Adam 优化器参数是什么?",
+        "ground_truth": {
+          "expected_answer": "Adam,β1 = 0.9,β2 = 0.98,ε = 1e-9。学习率用 warmup_steps = 4000 的 noam schedule",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            7
+          ],
+          "key_facts": [
+            "β1 = 0.9",
+            "β2 = 0.98",
+            "ε = 1e-9",
+            "warmup 4000"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，Adam 优化器的参数设置如下：\n\n- **β1 = 0.9**\n- **β2 = 0.98** \n- **ε = 10^-9**\n\n此外，论文还采用了特殊的学习率调度策略：\n\n**学习率公式：**\n```\nlrate = d_model^(-0.5) · min(step_num^(-0.5), step_num · warmup_steps^(-1.5))\n```\n\n其中 **warmup_steps = 4000**。\n\n这个学习率调度策略的特点是：在前 4000 个训练步骤中线性增加学习率，之后按步数的平方根倒数比例递减学习率。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "7",
+            "score": 0.3776997979588115,
+            "text_preview": "Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens. 5.2 Har"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.34013515386248283,
+            "text_preview": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.33755727485110154,
+            "text_preview": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Liste"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.3332039434248527,
+            "text_preview": "We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point ca"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.3322425083425062,
+            "text_preview": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model B"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 4.81
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.875
+      }
+    },
+    {
+      "question": {
+        "id": "eval_029",
+        "category": "detail",
+        "difficulty": "hard",
+        "question": "Transformer 的 dropout 率是多少?",
+        "ground_truth": {
+          "expected_answer": "Base 模型 Pdrop = 0.1;还使用 label smoothing ε_ls = 0.1",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            7
+          ],
+          "key_facts": [
+            "0.1",
+            "dropout",
+            "label smoothing"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "strict"
+        }
+      },
+      "result": {
+        "id": "eval_029",
+        "category": "detail",
+        "difficulty": "hard",
+        "question": "Transformer 的 dropout 率是多少?",
+        "ground_truth": {
+          "expected_answer": "Base 模型 Pdrop = 0.1;还使用 label smoothing ε_ls = 0.1",
+          "expected_papers": [
+            "transformer.pdf"
+          ],
+          "expected_pages": [
+            7
+          ],
+          "key_facts": [
+            "0.1",
+            "dropout",
+            "label smoothing"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文，该模型使用了不同的 dropout 率设置：\n\n**基础模型的 dropout 率：**\n- **残差 dropout**：对每个子层输出应用 dropout，dropout 率为 **Pdrop = 0.1**\n- **嵌入层 dropout**：对词嵌入和位置编码的和也应用 dropout，同样使用 0.1 的 dropout 率\n\n**大模型的 dropout 率：**\n- 在英德翻译任务中，大模型同样使用 **Pdrop = 0.1**\n- 但在英法翻译任务中，大模型使用了更低的 **Pdrop = 0.1**（而非 0.3）\n\n根据 Transformer 论文的实验结果显示，dropout 对避免过拟合非常有帮助。论文中还提到，在英语成分句法分析任务中，研究者对注意力机制和残差连接的 dropout 率进行了少量实验来选择最优参数。\n\n总体而言，Transformer 模型主要采用 **0.1** 作为标准的 dropout 率。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.33782812414378066,
+            "text_preview": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model B"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.31549606378384704,
+            "text_preview": "We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point ca"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.31505019626867237,
+            "text_preview": "We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3. In Table 3 rows (A), we vary the number of attention heads and the attention"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.3109645254617507,
+            "text_preview": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "7",
+            "score": 0.29898407482545686,
+            "text_preview": "Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens. 5.2 Har"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.07
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.667,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.917
+      }
+    },
+    {
+      "question": {
+        "id": "eval_030",
+        "category": "detail",
+        "difficulty": "hard",
+        "question": "RAG 论文中 retriever 检索的 top-K 是多少?",
+        "ground_truth": {
+          "expected_answer": "top-K = 5 或 10(论文做了对比实验,K = 5 是默认值)",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            3,
+            4
+          ],
+          "key_facts": [
+            "K = 5",
+            "默认值",
+            "对比实验"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "等你看 PDF 确认数字"
+      },
+      "result": {
+        "id": "eval_030",
+        "category": "detail",
+        "difficulty": "hard",
+        "question": "RAG 论文中 retriever 检索的 top-K 是多少?",
+        "ground_truth": {
+          "expected_answer": "top-K = 5 或 10(论文做了对比实验,K = 5 是默认值)",
+          "expected_papers": [
+            "rag.pdf"
+          ],
+          "expected_pages": [
+            3,
+            4
+          ],
+          "key_facts": [
+            "K = 5",
+            "默认值",
+            "对比实验"
+          ]
+        },
+        "synapse_answer": "根据RAG论文的内容，关于retriever检索的top-K值有以下几个关键信息：\n\n**训练时的K值设置：**\n根据RAG论文，模型在训练时使用5或10个检索到的潜在文档，且在这两个设置之间没有观察到显著的性能差异。\n\n**测试时的K值灵活性：**\n根据RAG论文，RAG具有在测试时调整检索文档数量的灵活性，这会影响性能和运行时间。实验结果显示：\n\n1. **对于开放域问答任务：** RAG-Sequence在检索更多文档时性能单调提升，而RAG-Token在检索10个文档时性能达到峰值。\n\n2. **对于MS-MARCO任务：** 检索更多文档会提高RAG-Token的Rouge-L分数，但会降低Bleu-1分数，而对RAG-Sequence的影响较小。\n\n**实验范围：**\n根据论文中的图3，实验测试了从10到50个检索文档的范围，显示了不同K值对性能的影响。\n\n总结来说，RAG论文中并没有固定的top-K值，而是根据具体任务和性能需求在5-50的范围内灵活调整，训练时主要使用5或10个文档。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.4584187025271478,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "8",
+            "score": 0.43589509286811184,
+            "text_preview": "This shows we can update RAG’s world knowledge by simply replacing its non-parametric memory. Effect of Retrieving more documents Models are trained with either 5 or 10 retrieved latent documents, and"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.4293241603218677,
+            "text_preview": "Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20]. It is worth noting that RAG’s retriever is initialized using DPR’s retriever"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "3",
+            "score": 0.4283071265500223,
+            "text_preview": "This allows the generator to choose content from several documents when producing an answer. Concretely, the top K documents are retrieved using the retriever, and then the generator produces a distri"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.4234900443764076,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 9.96
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.75
+      }
+    },
+    {
+      "question": {
+        "id": "eval_031",
+        "category": "cross_paper",
+        "subcategory": "parallel",
+        "difficulty": "easy",
+        "question": "Transformer 和 ReAct 都基于 LLM 吗?",
+        "ground_truth": {
+          "expected_answer": "Transformer 本身是一种模型架构(2017),ReAct 是基于 LLM 的提示框架(2022)。Transformer 不是 LLM,但现代 LLM(包括 ReAct 用的)都基于 Transformer 架构。",
+          "expected_papers": [
+            "transformer.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "Transformer 是架构",
+            "ReAct 是提示框架",
+            "现代 LLM 基于 Transformer"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        },
+        "notes": "并列对比 — 看是否区分'架构' vs '提示框架'"
+      },
+      "result": {
+        "id": "eval_031",
+        "category": "cross_paper",
+        "difficulty": "easy",
+        "question": "Transformer 和 ReAct 都基于 LLM 吗?",
+        "ground_truth": {
+          "expected_answer": "Transformer 本身是一种模型架构(2017),ReAct 是基于 LLM 的提示框架(2022)。Transformer 不是 LLM,但现代 LLM(包括 ReAct 用的)都基于 Transformer 架构。",
+          "expected_papers": [
+            "transformer.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "Transformer 是架构",
+            "ReAct 是提示框架",
+            "现代 LLM 基于 Transformer"
+          ]
+        },
+        "synapse_answer": "根据ReAct论文的内容，我可以回答关于ReAct与LLM关系的部分：\n\n**关于ReAct：**\n根据ReAct论文，ReAct确实基于大型语言模型(LLMs)。论文明确指出\"ReAct prompts LLMs to generate both verbal reasoning traces and actions pertaining to a task in an interleaved manner\"，表明ReAct是一种利用大型语言模型的方法范式，通过提示LLMs以交替方式生成推理轨迹和任务相关行动。\n\n论文还提到\"While large language models (LLMs) have demonstrated impressive performance across tasks in language understanding and interactive decision making\"，进一步确认ReAct是建立在LLM能力基础之上的。\n\n**关于Transformer：**\n当前检索到的论文片段中未涉及Transformer的相关内容，因此无法基于现有片段确定Transformer与LLM的具体关系。\n\n总结：根据现有片段，可以确认ReAct是基于LLM的方法，但关于Transformer与LLM关系的内容在当前片段中未涉及。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "9",
+            "score": 0.39334086334965274,
+            "text_preview": "WebGPT (Nakano et al., 2021) uses an LM to interact with web browsers, navigate through web pages, and infer answers to complicated questions from ELI5 (Fan et al., 2019). In comparison to ReAct, WebG"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "9",
+            "score": 0.39243926794255685,
+            "text_preview": "It is becoming more evident that with the help of LLMs, language as a fundamental cognitive mechanism will play a critical role in interaction and decision making. What is more, progress in LLMs has a"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.37542040881934885,
+            "text_preview": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "9",
+            "score": 0.37150808024930426,
+            "text_preview": "Published as a conference paper at ICLR 2023 5 R ELATED WORK Language model for reasoning Perhaps the most well-known work of using LLMs for reasoning is Chain-of-Thought (CoT) (Wei et al., 2022), whi"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "1",
+            "score": 0.3653403330513984,
+            "text_preview": "Published as a conference paper at ICLR 2023 REAC T: S YNERGIZING REASONING AND ACTING IN LANGUAGE MODELS Shunyu Yao∗*,1, Jeffrey Zhao2, Dian Yu2, Nan Du2, Izhak Shafran2, Karthik Narasimhan1, Yuan Ca"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.55
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.5,
+        "relevance_reason": "正确回答了ReAct基于LLM，但完全未回答Transformer与LLM的关系，只回答了问题的一半",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.7
+      }
+    },
+    {
+      "question": {
+        "id": "eval_032",
+        "category": "cross_paper",
+        "subcategory": "parallel",
+        "difficulty": "medium",
+        "question": "Transformer / RAG / ReAct 这三篇论文都在解决什么核心问题?",
+        "ground_truth": {
+          "expected_answer": "Transformer 解决序列建模问题(替代 RNN);RAG 解决 LLM 知识陈旧问题(引入外部检索);ReAct 解决 LLM 推理-行动协同问题(交替推理和工具调用)。三者层次不同:Transformer 是底层架构,RAG 是知识增强,ReAct 是推理框架。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "Transformer 序列建模",
+            "RAG 知识陈旧",
+            "ReAct 推理-行动协同",
+            "层次不同"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        },
+        "notes": "🌟 高价值题 — 3 篇论文同时覆盖,测真正的'知识网络'能力"
+      },
+      "result": {
+        "id": "eval_032",
+        "category": "cross_paper",
+        "difficulty": "medium",
+        "question": "Transformer / RAG / ReAct 这三篇论文都在解决什么核心问题?",
+        "ground_truth": {
+          "expected_answer": "Transformer 解决序列建模问题(替代 RNN);RAG 解决 LLM 知识陈旧问题(引入外部检索);ReAct 解决 LLM 推理-行动协同问题(交替推理和工具调用)。三者层次不同:Transformer 是底层架构,RAG 是知识增强,ReAct 是推理框架。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "Transformer 序列建模",
+            "RAG 知识陈旧",
+            "ReAct 推理-行动协同",
+            "层次不同"
+          ]
+        },
+        "synapse_answer": "基于检索到的论文片段，我只能回答其中一篇论文的核心问题：\n\n**根据RAG论文**：RAG（Retrieval-Augmented Generation）主要解决的核心问题是如何结合检索和生成来提升知识密集型任务的性能。具体来说：\n\n1. **融合参数化和非参数化知识**：RAG将\"闭卷\"（仅参数化）方法的生成灵活性与\"开卷\"检索方法的性能优势相结合\n\n2. **避免昂贵的预训练**：与REALM和T5+SSM不同，RAG无需进行昂贵的专门化\"显著跨度掩码\"预训练就能获得强劲结果\n\n3. **知识更新问题**：RAG的非参数化记忆可以在测试时轻松更新知识，而纯参数化模型（如T5或BART）需要进一步训练才能随着世界变化更新其行为\n\n4. **多任务适用性**：RAG在开放域问答、事实验证等多种知识密集型任务上都取得了最先进的性能\n\n**关于Transformer和ReAct论文的核心问题**，当前检索片段中未涉及相关内容，因此无法基于现有片段进行回答。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.3575202550279865,
+            "text_preview": "Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20]. It is worth noting that RAG’s retriever is initialized using DPR’s retriever"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "17",
+            "score": 0.3564209529358063,
+            "text_preview": "After submission, We have ported our code to HuggingFace Transformers [66]3, which achieves equivalent performance to the previous version but is a cleaner and easier to use implementation. This versi"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.3513399669416784,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.3459846201872094,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.34565127719197236,
+            "text_preview": "We follow best practice and use pairwise comparative evaluation [34]. Evaluators are shown an answer and two generated questions, one from BART and one from RAG. They are then asked to pick one of fou"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 9.81
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.3,
+        "relevance_reason": "只回答了RAG一篇论文的核心问题，对于Transformer和ReAct完全未涉及，存在严重遗漏",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.66
+      }
+    },
+    {
+      "question": {
+        "id": "eval_033",
+        "category": "cross_paper",
+        "subcategory": "parallel",
+        "difficulty": "hard",
+        "question": "Transformer 和 RAG 论文中,attention 机制分别扮演什么角色?",
+        "ground_truth": {
+          "expected_answer": "Transformer 论文里,attention 是模型核心(self-attention 替代 RNN);RAG 论文里,attention 是 generator(BART)内部的标准机制,RAG 的创新不在 attention,而在'检索+生成'的联合训练。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "Transformer 中是核心创新",
+            "RAG 中是标准组件",
+            "RAG 创新在检索+生成联合"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_033",
+        "category": "cross_paper",
+        "difficulty": "hard",
+        "question": "Transformer 和 RAG 论文中,attention 机制分别扮演什么角色?",
+        "ground_truth": {
+          "expected_answer": "Transformer 论文里,attention 是模型核心(self-attention 替代 RNN);RAG 论文里,attention 是 generator(BART)内部的标准机制,RAG 的创新不在 attention,而在'检索+生成'的联合训练。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "Transformer 中是核心创新",
+            "RAG 中是标准组件",
+            "RAG 创新在检索+生成联合"
+          ]
+        },
+        "synapse_answer": "基于检索到的论文片段，我可以分析 Transformer 和 RAG 论文中 attention 机制的不同角色：\n\n## Transformer 论文中的 attention 机制\n\n根据 Transformer 论文，attention 机制扮演核心架构角色：\n\n1. **替代传统架构**：论文提出了\"基于纯 attention 机制的新型简单网络架构 Transformer，完全摒弃了循环和卷积结构\"。\n\n2. **自注意力机制**：论文特别强调了 self-attention（自注意力）的作用，定义为\"关联单个序列中不同位置的注意力机制，用于计算序列的表示\"。Self-attention 已在阅读理解、抽象摘要、文本蕴含等多种任务中成功应用。\n\n3. **解决距离依赖问题**：在 Transformer 中，\"关联任意两个输入或输出位置信号所需的操作数被减少到常数级别\"，这相比传统模型的线性或对数级复杂度是重大改进。\n\n4. **多头注意力**：论文提到使用 Multi-Head Attention 来抵消注意力加权位置平均化导致的有效分辨率降低问题。\n\n## RAG 论文中的 attention 机制\n\n根据 RAG 论文片段，attention 机制的角色相对间接：\n\nRAG 模型主要关注检索-生成架构，其中生成器组件 pθ \"基于前 i-1 个 token 的上下文 y1:i-1、原始输入 x 和检索到的段落 z 来生成当前 token\"。虽然片段中没有明确详述 attention 在 RAG 中的具体实现，但可以推断 attention 机制likely用于生成器组件中处理检索文档和输入序列的关系。\n\n## 总结对比\n\n根据现有片段，Transformer 论文将 attention 作为模型的核心架构基础，而 RAG 论文更专注于检索增强的生成框架设计。关于 attention 在 RAG 具体生成过程中的详细机制，当前检索片段中未提供充分信息。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "3",
+            "score": 0.35982588428219103,
+            "text_preview": "by θthat generates a current token based on a context of the previous i−1 tokens y1:i−1, the original input xand a retrieved passage z. To train the retriever and generator end-to-end, we treat the re"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "17",
+            "score": 0.356663263278605,
+            "text_preview": "After submission, We have ported our code to HuggingFace Transformers [66]3, which achieves equivalent performance to the previous version but is a cleaner and easier to use implementation. This versi"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.35608452274159275,
+            "text_preview": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.3542171315878875,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.35213268889136107,
+            "text_preview": "∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Tra"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 15.36
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.8,
+        "relevance_reason": "准确回答了Transformer中attention的核心作用，但对RAG中attention角色的分析不够明确，未能清晰指出RAG的创新点不在attention而在检索-生成架构",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.76
+      }
+    },
+    {
+      "question": {
+        "id": "eval_034",
+        "category": "cross_paper",
+        "subcategory": "causal",
+        "difficulty": "easy",
+        "question": "RAG 系统用了哪个 LLM 作为生成器?",
+        "ground_truth": {
+          "expected_answer": "RAG 用 BART 作为生成器。BART 本身基于 Transformer 架构(encoder-decoder),所以 RAG 间接用了 Transformer。",
+          "expected_papers": [
+            "rag.pdf",
+            "transformer.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "BART",
+            "BART 基于 Transformer",
+            "encoder-decoder"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        },
+        "notes": "因果关系 — 测是否能识别'RAG → BART → Transformer'的依赖链"
+      },
+      "result": {
+        "id": "eval_034",
+        "category": "cross_paper",
+        "difficulty": "easy",
+        "question": "RAG 系统用了哪个 LLM 作为生成器?",
+        "ground_truth": {
+          "expected_answer": "RAG 用 BART 作为生成器。BART 本身基于 Transformer 架构(encoder-decoder),所以 RAG 间接用了 Transformer。",
+          "expected_papers": [
+            "rag.pdf",
+            "transformer.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "BART",
+            "BART 基于 Transformer",
+            "encoder-decoder"
+          ]
+        },
+        "synapse_answer": "根据 RAG 论文，RAG 系统使用 **BART** 作为生成器。\n\n具体来说，论文中明确提到：\"the seq2seq model (BART [32]) then conditions on these latent documents together with the input to generate the output\"。RAG 系统将检索器（Dense Passage Retriever, DPR）获取的潜在文档与输入一起作为条件，通过 BART 生成器来产生输出。\n\n论文还指出，RAG 模型在训练过程中保持文档编码器固定，\"only fine-tuning the query encoder BERTq and the BART generator\"，即只对查询编码器和 BART 生成器进行微调。\n\n此外，论文提到 RAG 与 T5 或 BART 类似，\"can be fine-tuned on any seq2seq task, whereby both the generator and retriever are jointly learned\"，可以在任何序列到序列任务上进行微调。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "4",
+            "score": 0.37486853304822493,
+            "text_preview": "minimize the negative marginal log-likelihood of each target, ∑ j−log p(yj|xj) using stochastic gradient descent with Adam [28]. Updating the document encoder BERTd during training is costly as it req"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.37163726636585487,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.3680883801657816,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.36673678856026576,
+            "text_preview": "We combine these components in a probabilistic model trained end-to-end (Fig. 1). The retriever (Dense Passage Retriever [26], henceforth DPR) provides latent documents conditioned on the input, and t"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "17",
+            "score": 0.3660038828680053,
+            "text_preview": "Appendices for Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks A Implementation Details For Open-domain QA we report test numbers using 15 retrieved documents for RAG-Token models. Fo"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.07
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.333,
+        "relevance": 1.0,
+        "relevance_reason": "完整准确地回答了RAG使用BART作为生成器，并提供了详细的论文引用和技术细节支撑",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.867
+      }
+    },
+    {
+      "question": {
+        "id": "eval_035",
+        "category": "cross_paper",
+        "subcategory": "causal",
+        "difficulty": "medium",
+        "question": "ReAct 论文里有没有用到 Transformer?",
+        "ground_truth": {
+          "expected_answer": "ReAct 本身是一种 prompt 框架(thought-action-observation 循环),不依赖特定架构。但论文实验用的是 PaLM(基于 Transformer)。所以 ReAct 间接依赖 Transformer。",
+          "expected_papers": [
+            "react.pdf",
+            "transformer.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "ReAct 是 prompt 框架",
+            "实验用 PaLM",
+            "PaLM 基于 Transformer"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_035",
+        "category": "cross_paper",
+        "difficulty": "medium",
+        "question": "ReAct 论文里有没有用到 Transformer?",
+        "ground_truth": {
+          "expected_answer": "ReAct 本身是一种 prompt 框架(thought-action-observation 循环),不依赖特定架构。但论文实验用的是 PaLM(基于 Transformer)。所以 ReAct 间接依赖 Transformer。",
+          "expected_papers": [
+            "react.pdf",
+            "transformer.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "ReAct 是 prompt 框架",
+            "实验用 PaLM",
+            "PaLM 基于 Transformer"
+          ]
+        },
+        "synapse_answer": "基于检索到的论文片段，我无法确定ReAct论文是否使用了Transformer。\n\n根据ReAct论文片段显示，ReAct是一个结合推理和行动的通用范式，通过提示大型语言模型(LLMs)以交替方式生成语言推理轨迹和行动来解决多样化的语言推理和决策任务。ReAct扩展了智能体的行动空间，将语言空间纳入其中，使智能体能够通过推理来指导行动，同时通过与外部环境的交互来增强推理。\n\n然而，当前检索到的ReAct论文片段中并未明确提及是否使用了Transformer架构作为其底层的语言模型实现。虽然片段中提到了\"大型语言模型\"(LLMs)，但没有具体说明采用的是哪种架构。\n\n关于ReAct论文中Transformer使用情况的具体信息，在当前检索片段中未涉及。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "10",
+            "score": 0.37385302246746827,
+            "text_preview": "Table 4: The Transformer generalizes well to English constituency parsing (Results are on Section 23 of WSJ) Parser Training WSJ 23 F1 Vinyals & Kaiser el al. (2014) [37] WSJ only, discriminative 88.3"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.3706248631559513,
+            "text_preview": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.3671899037680133,
+            "text_preview": "limited support of reasoning and acting behaviors), and perform initial ﬁnetuning experiments showing the potential of ReAct to improve with additional training data. Scaling up ReAct to train and ope"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.3601995184175117,
+            "text_preview": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.35994311073706564,
+            "text_preview": "∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Tra"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 6.97
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.2,
+        "relevance_reason": "AI答案承认无法确定是否使用Transformer，没有回答核心问题，且缺少关键信息如PaLM的使用",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.64
+      }
+    },
+    {
+      "question": {
+        "id": "eval_036",
+        "category": "cross_paper",
+        "subcategory": "complementary",
+        "difficulty": "medium",
+        "question": "如果把 ReAct 的思想用到 RAG 系统上,会有什么效果?",
+        "ground_truth": {
+          "expected_answer": "ReAct 的 thought-action-observation 循环,可以让 RAG 从'一次检索'变成'多次检索 + 推理'。例如,LLM 先 thought(分析需要什么信息) → action(检索文档) → observation(读结果) → 下一轮 thought(发现还缺信息) → action(再次检索)。这其实就是现代 Agentic RAG 的雏形。",
+          "expected_papers": [
+            "react.pdf",
+            "rag.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "thought-action-observation 循环",
+            "多轮检索",
+            "Agentic RAG",
+            "动态决策"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        },
+        "notes": "🌟 高价值题 — 测'综合思考能力',这是简单 RAG 工具答不出的"
+      },
+      "result": {
+        "id": "eval_036",
+        "category": "cross_paper",
+        "difficulty": "medium",
+        "question": "如果把 ReAct 的思想用到 RAG 系统上,会有什么效果?",
+        "ground_truth": {
+          "expected_answer": "ReAct 的 thought-action-observation 循环,可以让 RAG 从'一次检索'变成'多次检索 + 推理'。例如,LLM 先 thought(分析需要什么信息) → action(检索文档) → observation(读结果) → 下一轮 thought(发现还缺信息) → action(再次检索)。这其实就是现代 Agentic RAG 的雏形。",
+          "expected_papers": [
+            "react.pdf",
+            "rag.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "thought-action-observation 循环",
+            "多轮检索",
+            "Agentic RAG",
+            "动态决策"
+          ]
+        },
+        "synapse_answer": "根据ReAct论文的内容，将ReAct的思想应用到RAG系统上可能会产生以下效果：\n\n**1. 增强推理引导的信息检索**\n根据ReAct论文，ReAct的核心思想是\"augment the agent's action space to A∪L, where L is the space of language\"，即在行动空间中加入语言推理。应用到RAG系统中，这意味着系统可以通过推理trace来指导如何检索和使用外部知识，而不是简单地基于查询进行检索。\n\n**2. 改善复杂任务的分解能力**\n根据ReAct论文，\"without any thoughts at all, Act fails to correctly decompose goals into smaller subgoals, or loses track of the current state\"。在RAG系统中引入ReAct的推理机制，可以帮助系统更好地将复杂查询分解为子目标，并跟踪当前的信息获取状态。\n\n**3. 提升信息整合的准确性**\n根据ReAct论文，ReAct在Webshop任务中\"more likely to identify instruction-relevant products and options by reasoning to bridge the gap between noisy observations and actions\"。类似地，在RAG系统中，推理trace可以帮助系统更好地识别检索到的信息中哪些与查询真正相关，并桥接检索信息与最终答案之间的gap。\n\n**4. 支持动态的知识获取策略**\n根据ReAct论文，\"reasoning traces in ReAct for decision making is flexible and sparse, allowing diverse reasoning types to be induced for different tasks\"。这种灵活的推理能力可以让RAG系统根据不同类型的查询采用不同的知识检索和整合策略。\n\n**5. 实现更好的人机协作**\n根据ReAct论文的人机协作实验，\"solving such a task becomes significantly easier, from typing tens of actions to only editing a couple of thoughts\"。在RAG系统中，用户可以通过编辑推理trace来引导系统的知识检索和答案生成过程。\n\n需要注意的是，当前检索片段主要展示了ReAct在问答和交互环境中的表现，关于RAG系统的具体技术细节和架构在现有片段中未涉及，因此无法提供更具体的技术实现建议。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.3757308361787328,
+            "text_preview": "In fact, even the worse ReAct trial (48%) beats the best trial of both methods. Moreover, the advantage of ReAct over Act is consistent across six controlled trials, with relative performance gain ran"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.3744718706041551,
+            "text_preview": "limited support of reasoning and acting behaviors), and perform initial ﬁnetuning experiments showing the potential of ReAct to improve with additional training data. Scaling up ReAct to train and ope"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.37030100452586523,
+            "text_preview": "In contrast, the reasoning traces in ReAct for decision making is ﬂexible and sparse, allowing diverse reasoning types (see Section 2) to be induced for different tasks. To demonstrate the differences"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "14",
+            "score": 0.36571890850294425,
+            "text_preview": "where the original label is outdated. Only ReAct is able to obtain the up-to-date answer thanks to real-world web interaction plus reasoning. During trajectory inspection, we also ﬁnd that sometimesRe"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "5",
+            "score": 0.364460338395073,
+            "text_preview": "More details are in Appendix B.1. 3.3 R ESULTS AND OBSERVATIONS ReAct outperforms Act consistently Table 1 shows HotpotQA and Fever results using PaLM- 540B as the base model with different prompting "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 15.0
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.8,
+        "relevance_reason": "准确理解了ReAct思想在RAG中的应用价值，涵盖了推理引导检索、任务分解、信息整合等核心要点，但缺少标准答案中明确的thought-action-observation循环机制和多轮检索的具体描述",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.76
+      }
+    },
+    {
+      "question": {
+        "id": "eval_037",
+        "category": "cross_paper",
+        "subcategory": "complementary",
+        "difficulty": "hard",
+        "question": "Transformer 的 multi-head attention 对 RAG 的检索阶段有帮助吗?",
+        "ground_truth": {
+          "expected_answer": "RAG 的检索阶段用 DPR(Dense Passage Retrieval),DPR 的 encoder 是 BERT(基于 Transformer)。所以 RAG 检索阶段确实间接用了 Transformer 的 multi-head attention(在 BERT encoder 内部)。但 RAG 论文本身没讨论 attention 在检索阶段的作用,只把它当作 DPR 的标准组件。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "DPR 基于 BERT",
+            "BERT 基于 Transformer",
+            "RAG 论文未单独讨论检索阶段 attention"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_037",
+        "category": "cross_paper",
+        "difficulty": "hard",
+        "question": "Transformer 的 multi-head attention 对 RAG 的检索阶段有帮助吗?",
+        "ground_truth": {
+          "expected_answer": "RAG 的检索阶段用 DPR(Dense Passage Retrieval),DPR 的 encoder 是 BERT(基于 Transformer)。所以 RAG 检索阶段确实间接用了 Transformer 的 multi-head attention(在 BERT encoder 内部)。但 RAG 论文本身没讨论 attention 在检索阶段的作用,只把它当作 DPR 的标准组件。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "DPR 基于 BERT",
+            "BERT 基于 Transformer",
+            "RAG 论文未单独讨论检索阶段 attention"
+          ]
+        },
+        "synapse_answer": "基于现有论文片段，我无法确定Transformer的multi-head attention对RAG检索阶段的具体帮助。\n\n根据RAG论文片段，主要讨论了RAG的检索机制效果，包括：\n- 学习检索相关信息的重要性，冻结检索器的消融实验显示学习检索能改善所有任务的结果\n- RAG的密集检索器与基于词重叠的BM25检索器的比较，显示可微检索在大多数任务上表现更好\n- RAG使用DPR初始化的检索器，在自然问题和TriviaQA上使用检索监督\n\n根据Transformer论文片段，详细介绍了multi-head attention的机制：\n- Multi-head attention允许模型在不同位置联合关注来自不同表示子空间的信息\n- 在编码器-解码器注意力层、编码器自注意力层和解码器自注意力层中的三种应用方式\n\n然而，现有片段中没有直接说明Transformer的multi-head attention机制如何具体应用于或改善RAG的检索阶段性能。RAG论文片段主要关注检索策略和效果评估，而Transformer论文片段主要阐述attention机制本身，两者之间的具体关联在当前检索片段中未涉及。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.4456505793112877,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.43968086757246966,
+            "text_preview": "Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20]. It is worth noting that RAG’s retriever is initialized using DPR’s retriever"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "17",
+            "score": 0.42343317802810493,
+            "text_preview": "After submission, We have ported our code to HuggingFace Transformers [66]3, which achieves equivalent performance to the previous version but is a cleaner and easier to use implementation. This versi"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "5",
+            "score": 0.4223612206554875,
+            "text_preview": "output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2. Multi-head attention allows the model to jointly attend to information from diff"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "8",
+            "score": 0.41144489526989453,
+            "text_preview": "This shows we can update RAG’s world knowledge by simply replacing its non-parametric memory. Effect of Retrieving more documents Models are trained with either 5 or 10 retrieved latent documents, and"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 9.83
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.3,
+        "relevance_reason": "AI答案承认无法确定具体帮助但未识别出RAG检索阶段使用DPR(基于BERT/Transformer)这一关键技术联系,遗漏了问题的核心要点",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.66
+      }
+    },
+    {
+      "question": {
+        "id": "eval_038",
+        "category": "cross_paper",
+        "subcategory": "contrast",
+        "difficulty": "medium",
+        "question": "RAG 和 ReAct 都'调用外部信息',它们的区别是什么?",
+        "ground_truth": {
+          "expected_answer": "RAG:一次性检索(retriever 拉 top-K 文档,然后生成),被动接收信息。ReAct:多轮交互(LLM 主动决定何时调用什么工具),主动决策。RAG 更像'查资料的学生',ReAct 更像'解决问题的研究员'。",
+          "expected_papers": [
+            "rag.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "RAG 一次性检索",
+            "ReAct 多轮交互",
+            "被动 vs 主动",
+            "查资料 vs 研究"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        },
+        "notes": "🌟 高价值题 — '查资料的学生 vs 解决问题的研究员'类比"
+      },
+      "result": {
+        "id": "eval_038",
+        "category": "cross_paper",
+        "difficulty": "medium",
+        "question": "RAG 和 ReAct 都'调用外部信息',它们的区别是什么?",
+        "ground_truth": {
+          "expected_answer": "RAG:一次性检索(retriever 拉 top-K 文档,然后生成),被动接收信息。ReAct:多轮交互(LLM 主动决定何时调用什么工具),主动决策。RAG 更像'查资料的学生',ReAct 更像'解决问题的研究员'。",
+          "expected_papers": [
+            "rag.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "RAG 一次性检索",
+            "ReAct 多轮交互",
+            "被动 vs 主动",
+            "查资料 vs 研究"
+          ]
+        },
+        "synapse_answer": "根据ReAct论文的内容，我可以回答ReAct如何调用外部信息，但当前检索片段中未涉及RAG的具体内容，因此无法进行完整对比。\n\n**关于ReAct调用外部信息的特点：**\n\n根据ReAct论文，ReAct采用\"推理与行动相结合\"的范式来调用外部信息，具有以下特征：\n\n1. **交互式推理与行动**：根据ReAct论文，ReAct让语言模型以交替方式生成\"语言推理轨迹\"和\"行动\"，使模型能够进行动态推理来创建、维护和调整高层计划（reason to act），同时与外部环境（如Wikipedia）交互以将额外信息纳入推理（act to reason）。\n\n2. **灵活稀疏的推理**：根据ReAct论文，ReAct的推理轨迹是\"灵活和稀疏的\"，允许针对不同任务诱导出多样化的推理类型。\n\n3. **闭环系统中的实时交互**：根据ReAct论文，ReAct是\"首次在闭环系统中使用LLM将推理和行动结合应用于交互式环境的演示\"。\n\n4. **获取实时信息**：根据ReAct论文，在处理过时信息时，\"只有ReAct能够通过真实世界的网络交互加上推理获得最新答案\"。\n\n**关于RAG调用外部信息的内容**，当前检索片段中未涉及，因此无法提供RAG与ReAct在调用外部信息方面的具体区别对比。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.35527560257436347,
+            "text_preview": "In fact, even the worse ReAct trial (48%) beats the best trial of both methods. Moreover, the advantage of ReAct over Act is consistent across six controlled trials, with relative performance gain ran"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "14",
+            "score": 0.3509049884182575,
+            "text_preview": "where the original label is outdated. Only ReAct is able to obtain the up-to-date answer thanks to real-world web interaction plus reasoning. During trajectory inspection, we also ﬁnd that sometimesRe"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.34898394238030483,
+            "text_preview": "In contrast, the reasoning traces in ReAct for decision making is ﬂexible and sparse, allowing diverse reasoning types (see Section 2) to be induced for different tasks. To demonstrate the differences"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.3488954242802643,
+            "text_preview": "Published as a conference paper at ICLR 2023 Method Pick Clean Heat Cool Look Pick 2 All Act(best of 6) 88 42 74 67 72 41 45 ReAct(avg) 65 39 83 76 55 24 57 ReAct(best of 6) 92 58 96 86 78 41 71 ReAct"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.34776194424351764,
+            "text_preview": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 10.2
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.3,
+        "relevance_reason": "只详细介绍了ReAct的特点，但明确表示无法提供RAG内容，未能回答问题的核心要求即两者的区别对比",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.66
+      }
+    },
+    {
+      "question": {
+        "id": "eval_039",
+        "category": "cross_paper",
+        "subcategory": "contrast",
+        "difficulty": "hard",
+        "question": "Transformer / RAG / ReAct 三者在'解决幻觉'上各有什么思路?",
+        "ground_truth": {
+          "expected_answer": "Transformer:不直接解决幻觉(它是底层架构,幻觉是上层应用问题)。RAG:用'检索外部知识'减少幻觉(知识有出处)。ReAct:用'交互式工具调用'减少幻觉(thought 暴露推理过程,action 验证假设)。三者层次不同 — Transformer 提供能力,RAG 提供知识源,ReAct 提供验证机制。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "Transformer 不直接解决",
+            "RAG 用外部知识",
+            "ReAct 用交互验证",
+            "三个层次"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        },
+        "notes": "🌟 高价值题 — 完美对接你 Day 4 的反幻觉故事"
+      },
+      "result": {
+        "id": "eval_039",
+        "category": "cross_paper",
+        "difficulty": "hard",
+        "question": "Transformer / RAG / ReAct 三者在'解决幻觉'上各有什么思路?",
+        "ground_truth": {
+          "expected_answer": "Transformer:不直接解决幻觉(它是底层架构,幻觉是上层应用问题)。RAG:用'检索外部知识'减少幻觉(知识有出处)。ReAct:用'交互式工具调用'减少幻觉(thought 暴露推理过程,action 验证假设)。三者层次不同 — Transformer 提供能力,RAG 提供知识源,ReAct 提供验证机制。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "Transformer 不直接解决",
+            "RAG 用外部知识",
+            "ReAct 用交互验证",
+            "三个层次"
+          ]
+        },
+        "synapse_answer": "基于提供的论文片段，我只能回答关于ReAct在解决幻觉问题上的思路，因为片段中未涉及Transformer和RAG的相关内容。\n\n**ReAct解决幻觉的思路：**\n\n根据ReAct论文，该方法通过以下方式解决幻觉问题：\n\n1. **推理与行动的协同机制**：ReAct将推理空间扩展到行动空间中（ˆA= A∪L），通过思维轨迹（thought）来组织有用信息，更新上下文以支持未来的推理或行动，从而减少基于错误假设的幻觉行为。\n\n2. **实时信息获取能力**：论文指出\"Only ReAct is able to obtain the up-to-date answer thanks to real-world web interaction plus reasoning\"，通过与真实世界的网络交互获取最新信息，避免因训练数据过时而产生的幻觉。\n\n3. **人机协作纠错机制**：ReAct支持人在回路中的行为纠正，\"by simply removing a hallucinating sentence in Act 17 and adding some hints in Act 23, ReAct can be made to change its behavior drastically\"，人类可以直接编辑推理轨迹来纠正幻觉。\n\n4. **灵活的推理类型**：与Inner Monologue相比，ReAct的推理轨迹\"is flexible and sparse, allowing diverse reasoning types\"，能够根据不同任务诱导多样化的推理类型，减少固化的错误推理模式。\n\n**关于Transformer和RAG在解决幻觉方面的思路，当前检索片段中未涉及相关内容。**",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "14",
+            "score": 0.3553096553365692,
+            "text_preview": "where the original label is outdated. Only ReAct is able to obtain the up-to-date answer thanks to real-world web interaction plus reasoning. During trajectory inspection, we also ﬁnd that sometimesRe"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "15",
+            "score": 0.35279138068007676,
+            "text_preview": "(a) ReAct trajectory fails due to a hallucinating thought (Act 17). (b) By a human simply editing two thoughts (Act 17, 23), the ReAct trajectory produces desirable reasoning traces and actions and su"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.3434520723073675,
+            "text_preview": "limited support of reasoning and acting behaviors), and perform initial ﬁnetuning experiments showing the potential of ReAct to improve with additional training data. Scaling up ReAct to train and ope"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "15",
+            "score": 0.3431571287648714,
+            "text_preview": "\u0003WDNH\u0003WKH\u0003VHFRQG\u0003NH\\FKDLQ\u0003\u000b\u0015\f\u0011\u00031H[W\u000f\u0003,\u0003QHHG\u0003WR\u0003SXW\u0003LW\u0003 LQ\u0012RQ\u0003VDIH\u0003\u0014\u0011@ $FW\u0003\u0015\u001b\u001d\u0003JR\u0003WR\u0003VDIH\u0003\u0014 2EV\u0003\u0015\u001b\u001d\u00037KH\u0003VDIH\u0003\u0014\u0003LV\u0003RSHQ\u0011\u0003,Q\u0003LW\u000f\u0003\\RX\u0003VHH\u0003D\u0003NH\\FKDLQ\u0003\u0016\u000f\u0003D\u0003VWDWXH\u0003\u0015\u000f\u0003DQG\u0003D\u0003 ZDWFK\u0003\u0016\u0011 $FW\u0003\u0015\u001c\u001d\u0003SXW\u0003NH\\FKDLQ\u0003\u0015\u0003L"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.3421893523907161,
+            "text_preview": "In fact, even the worse ReAct trial (48%) beats the best trial of both methods. Moreover, the advantage of ReAct over Act is consistent across six controlled trials, with relative performance gain ran"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 11.98
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.3,
+        "relevance_reason": "只回答了ReAct部分且过于详细冗长，完全没有回答Transformer和RAG的解决思路，缺失了问题的主要内容",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.66
+      }
+    },
+    {
+      "question": {
+        "id": "eval_040",
+        "category": "cross_paper",
+        "subcategory": "contrast",
+        "difficulty": "hard",
+        "question": "如果用 Transformer / RAG / ReAct 构建一个 AI 系统,它们各负责什么角色?",
+        "ground_truth": {
+          "expected_answer": "Transformer:底层架构(LLM 本身的网络)。RAG:知识层(用检索给 LLM 注入外部知识)。ReAct:智能体层(让 LLM 自主决策何时检索、用什么工具)。三者形成'架构 → 知识 → 智能体'的层次结构,这其实就是现代 AI Agent 系统(如 Anthropic 的 Computer Use)的典型设计。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "架构 → 知识 → 智能体",
+            "三层结构",
+            "现代 AI Agent 设计"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "llm",
+          "tolerance": "loose"
+        },
+        "notes": "🌟 终极题 — 测候选人的'系统思维'"
+      },
+      "result": {
+        "id": "eval_040",
+        "category": "cross_paper",
+        "difficulty": "hard",
+        "question": "如果用 Transformer / RAG / ReAct 构建一个 AI 系统,它们各负责什么角色?",
+        "ground_truth": {
+          "expected_answer": "Transformer:底层架构(LLM 本身的网络)。RAG:知识层(用检索给 LLM 注入外部知识)。ReAct:智能体层(让 LLM 自主决策何时检索、用什么工具)。三者形成'架构 → 知识 → 智能体'的层次结构,这其实就是现代 AI Agent 系统(如 Anthropic 的 Computer Use)的典型设计。",
+          "expected_papers": [
+            "transformer.pdf",
+            "rag.pdf",
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "架构 → 知识 → 智能体",
+            "三层结构",
+            "现代 AI Agent 设计"
+          ]
+        },
+        "synapse_answer": "基于检索到的论文片段，我可以回答其中两个组件的角色：\n\n**Transformer的角色：**\n根据Transformer论文，Transformer是一个基于注意力机制的序列转换模型，采用编码器-解码器架构。具体而言：\n- **编码器**：将输入序列映射为连续表示，由6个相同层组成，每层包含多头自注意力机制和前馈网络\n- **解码器**：基于编码器输出生成目标序列，同样由6个层组成，但增加了对编码器输出的注意力层\n- **核心优势**：完全基于自注意力机制，无需循环或卷积结构，能够并行化处理且训练时间更短\n\n**ReAct的角色：**\n根据ReAct论文片段，ReAct专注于交互式决策和推理：\n- **推理建模**：显式建模思考和推理过程，这是其与WebGPT等方法的关键区别\n- **决策制定**：在交互环境中进行规划和决策，通过语言描述推理过程来学习策略\n- **成本优势**：相比依赖昂贵人类反馈的方法，ReAct通过语言描述推理过程实现更经济的策略学习\n\n**关于RAG：**\n当前检索片段中未涉及RAG相关内容，因此无法基于现有片段确定其在AI系统中的具体角色。\n\n从现有信息看，Transformer可作为基础的序列处理架构，ReAct负责交互式推理和决策制定，但完整的系统架构还需要RAG组件的补充信息。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.3702590152900671,
+            "text_preview": "∗Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Tra"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.3458693935453599,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "3",
+            "score": 0.34529515511068853,
+            "text_preview": "Figure 1: The Transformer - model architecture. The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "1",
+            "score": 0.3418372665322381,
+            "text_preview": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "9",
+            "score": 0.33340112396371524,
+            "text_preview": "WebGPT (Nakano et al., 2021) uses an LM to interact with web browsers, navigate through web pages, and infer answers to complicated questions from ELI5 (Fan et al., 2019). In comparison to ReAct, WebG"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 10.75
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": 0.5,
+        "relevance_reason": "正确描述了Transformer和ReAct的技术细节，但缺失RAG组件，且未能准确把握三者在AI系统中的分层角色关系",
+        "citation_rate": 1.0,
+        "refusal": null,
+        "total": 0.7
+      }
+    },
+    {
+      "question": {
+        "id": "eval_041",
+        "category": "out_of_scope",
+        "difficulty": "easy",
+        "question": "GPT-4 的参数量是多少?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "超出范围"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_041",
+        "category": "out_of_scope",
+        "difficulty": "easy",
+        "question": "GPT-4 的参数量是多少?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "超出范围"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定GPT-4的参数量。\n\n检索到的论文片段中仅包含以下模型的参数信息：\n\n**根据RAG论文**：RAG模型包含626M个可训练参数，其中包括BERT-base查询和文档编码器各110M参数，以及BART-large的406M参数。\n\n**根据Transformer论文**：提供了不同Transformer变体的参数量，包括：\n- 基础模型：65M参数\n- 大型模型：213M参数  \n- 其他变体：28M到168M参数不等\n\n但这些片段均未涉及GPT-4模型的参数量信息。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "18",
+            "score": 0.3095985948601457,
+            "text_preview": "G Parameters Our RAG models contain the trainable parameters for the BERT-base query and document encoder of DPR, with 110M parameters each (although we do not train the document encoder ourselves) an"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.3065801864816936,
+            "text_preview": "We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point ca"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.29163125745160623,
+            "text_preview": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Liste"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.2853963712713121,
+            "text_preview": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.27722499664672495,
+            "text_preview": "We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3. In Table 3 rows (A), we vary the number of attention heads and the attention"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.48
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_042",
+        "category": "out_of_scope",
+        "difficulty": "easy",
+        "question": "Claude 3 Sonnet 的训练数据截止到哪一年?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "超出范围"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_042",
+        "category": "out_of_scope",
+        "difficulty": "easy",
+        "question": "Claude 3 Sonnet 的训练数据截止到哪一年?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "超出范围"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定。\n\n检索到的论文片段来自Transformer论文，该论文主要讨论了Transformer模型架构在机器翻译任务上的表现和实验结果，但其中没有包含任何关于Claude 3 Sonnet模型或其训练数据截止时间的信息。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.2188509419367437,
+            "text_preview": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Liste"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "7",
+            "score": 0.21238017490933792,
+            "text_preview": "Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens. 5.2 Har"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.20970978019227773,
+            "text_preview": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.2075132122212675,
+            "text_preview": "We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3. In Table 3 rows (A), we vary the number of attention heads and the attention"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.2064431017174034,
+            "text_preview": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model B"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 3.38
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_043",
+        "category": "out_of_scope",
+        "difficulty": "easy",
+        "question": "Transformer 在医疗影像分析上有什么应用?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定(论文不涉及医疗影像)",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "不涉及医疗"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "易诱发知识泄露"
+      },
+      "result": {
+        "id": "eval_043",
+        "category": "out_of_scope",
+        "difficulty": "easy",
+        "question": "Transformer 在医疗影像分析上有什么应用?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定(论文不涉及医疗影像)",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "不涉及医疗"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定 Transformer 在医疗影像分析上的具体应用。\n\n根据 Transformer 论文的片段显示，该论文主要关注机器翻译任务，特别是英德翻译和英法翻译。论文中提到作者对基于注意力机制模型的未来发展感到兴奋，并计划将 Transformer 应用到其他任务，包括\"涉及文本以外的输入和输出模态的问题，以及研究局部、受限的注意力机制来有效处理大型输入和输出，如图像、音频和视频\"。\n\n虽然论文提及了将 Transformer 扩展到图像等视觉模态的计划，但检索到的片段中并未包含关于医疗影像分析的具体应用或实现细节。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.2692239198641381,
+            "text_preview": "We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point ca"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "12",
+            "score": 0.26492928394286225,
+            "text_preview": "Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016. [39] Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. D"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "10",
+            "score": 0.2606514725759099,
+            "text_preview": "For translation tasks, the Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers. On both WMT 2014 English-to-German and WMT 2014 English-to-Fre"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.2571656370854286,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "4",
+            "score": 0.2523876438275864,
+            "text_preview": "On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional 4To illustrate why the dot products get large, assume that t"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.84
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_044",
+        "category": "out_of_scope",
+        "difficulty": "medium",
+        "question": "BERT 和 Transformer 的区别是什么?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定 — BERT 论文不在库中",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "BERT 不在库"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "高诱惑题"
+      },
+      "result": {
+        "id": "eval_044",
+        "category": "out_of_scope",
+        "difficulty": "medium",
+        "question": "BERT 和 Transformer 的区别是什么?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定 — BERT 论文不在库中",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "BERT 不在库"
+          ]
+        },
+        "synapse_answer": "基于现有片段，我只能提供关于Transformer的信息，但片段中没有涉及BERT的相关内容。\n\n根据Transformer论文，Transformer具有以下关键特征：\n\n**架构特点：**\n- 根据Transformer论文，这是第一个完全依赖自注意力机制来计算输入和输出表示的转换模型，不使用序列对齐的RNN或卷积\n- 采用编码器-解码器结构，编码器和解码器都由N=6个相同层堆叠组成\n- 每个编码器层包含两个子层：多头自注意力机制和位置全连接前馈网络\n\n**技术优势：**\n- 根据Transformer论文，相比ConvS2S和ByteNet等模型，Transformer将关联任意两个输入或输出位置信号所需的操作数减少到常数级别\n- 自注意力机制能够关联单个序列中不同位置来计算序列表示\n\n**性能表现：**\n- 根据Transformer论文，在英德和英法翻译任务上，Transformer在训练成本大幅降低的情况下取得了更好的BLEU分数\n- base模型在英德翻译上达到27.3 BLEU，big模型达到28.4 BLEU\n\n关于BERT与Transformer的具体区别，当前检索片段中未涉及BERT的相关内容，因此无法进行对比分析。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.3344829424882641,
+            "text_preview": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Liste"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.3277278916051698,
+            "text_preview": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model B"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.3196414632170841,
+            "text_preview": "We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3. In Table 3 rows (A), we vary the number of attention heads and the attention"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "3",
+            "score": 0.3155982537158212,
+            "text_preview": "Figure 1: The Transformer - model architecture. The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "2",
+            "score": 0.31422697114022485,
+            "text_preview": "In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 8.54
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 0.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 0.667
+      }
+    },
+    {
+      "question": {
+        "id": "eval_045",
+        "category": "out_of_scope",
+        "difficulty": "medium",
+        "question": "ReAct 在 AlphaFold 上有应用吗?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_045",
+        "category": "out_of_scope",
+        "difficulty": "medium",
+        "question": "ReAct 在 AlphaFold 上有应用吗?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定"
+          ]
+        },
+        "synapse_answer": "根据提供的论文片段，ReAct 论文中没有涉及在 AlphaFold 上的应用。\n\n根据 ReAct 论文的内容，该方法主要在以下四个基准测试中进行了实证评估：\n1. 问答任务（HotPotQA）\n2. 事实验证（Fever）  \n3. 基于文本的游戏（ALFWorld）\n4. 网页导航（WebShop）\n\n论文显示 ReAct 在这些任务中表现优异，特别是在 ALFWorld 和 WebShop 上，仅使用少样本提示就能超越用大量训练实例训练的模仿学习或强化学习方法。\n\n基于现有片段，无法确定 ReAct 是否在 AlphaFold 上有具体应用。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.4084981701209731,
+            "text_preview": "Published as a conference paper at ICLR 2023 Method Pick Clean Heat Cool Look Pick 2 All Act(best of 6) 88 42 74 67 72 41 45 ReAct(avg) 65 39 83 76 55 24 57 ReAct(best of 6) 92 58 96 86 78 41 71 ReAct"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "27",
+            "score": 0.37128272122046463,
+            "text_preview": "Published as a conference paper at ICLR 2023 Example 3208 (gt: REFUTES) ReAct Claim: Reign Over Me is an American film made in 2010. Thought 1: I need to search for Reign Over Me and find if it is an "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "10",
+            "score": 0.36641455049490007,
+            "text_preview": "Published as a conference paper at ICLR 2023 with initial promising results, but learning from more high-quality human annotations will be the desiderata to further improve the performance. Scaling up"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.3633465405498741,
+            "text_preview": "Published as a conference paper at ICLR 2023 We conduct empirical evaluations ofReAct and state-of-the-art baselines on four diverse benchmarks: question answering (HotPotQA, Yang et al., 2018), fact "
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "5",
+            "score": 0.35918458182999624,
+            "text_preview": "More details are in Appendix B.1. 3.3 R ESULTS AND OBSERVATIONS ReAct outperforms Act consistently Table 1 shows HotpotQA and Fever results using PaLM- 540B as the base model with different prompting "
+          }
+        ],
+        "error": null,
+        "duration_seconds": 6.14
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 1.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 1.0
+      }
+    },
+    {
+      "question": {
+        "id": "eval_046",
+        "category": "out_of_scope",
+        "difficulty": "medium",
+        "question": "OpenAI 的 o1 模型用了什么技术?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定 — o1 不在库中",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "o1 不在库"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_046",
+        "category": "out_of_scope",
+        "difficulty": "medium",
+        "question": "OpenAI 的 o1 模型用了什么技术?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定 — o1 不在库中",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "o1 不在库"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定 OpenAI 的 o1 模型使用了什么技术。\n\n检索到的论文片段主要来自 Transformer 论文和 RAG 论文，这些片段包含了：\n\n- **Transformer 论文**：介绍了注意力机制、训练配置（如使用 8 个 NVIDIA P100 GPU、Adam 优化器等）以及相关的技术参考文献\n- **RAG 论文**：涉及检索增强生成的相关研究引用\n\n但是，这些片段中均未提及 OpenAI 的 o1 模型或其具体技术实现。要回答关于 o1 模型技术细节的问题，需要包含该模型相关内容的论文片段。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "12",
+            "score": 0.320932795704289,
+            "text_preview": "[25] Mitchell P Marcus, Mary Ann Marcinkiewicz, and Beatrice Santorini. Building a large annotated corpus of english: The penn treebank. Computational linguistics, 19(2):313–330, 1993. [26] David McCl"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "7",
+            "score": 0.31574071510848284,
+            "text_preview": "Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens. 5.2 Har"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "11",
+            "score": 0.31501694856623186,
+            "text_preview": "Association for Computational Linguistics. doi: 10.18653/v1/P18-1082. URL https://www.aclweb.org/anthology/ P18-1082. [12] Angela Fan, Yacine Jernite, Ethan Perez, David Grangier, Jason Weston, and Mi"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "11",
+            "score": 0.3069688671179358,
+            "text_preview": "Long short-term memory. Neural computation, 9(8):1735–1780, 1997. [14] Zhongqiang Huang and Mary Harper. Self-training PCFG grammars with latent annotations across languages. In Proceedings of the 200"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "15",
+            "score": 0.3056953201165845,
+            "text_preview": "AAAI Conference on Artiﬁcial Intelligence, 2018. URL https://www.aaai.org/ocs/index. php/AAAI/AAAI18/paper/view/17329. [60] Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samue"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 5.53
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_047",
+        "category": "out_of_scope",
+        "difficulty": "hard",
+        "question": "RAG 在金融领域的应用案例?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定 — RAG 论文实验在 NLP 任务",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "金融领域不涉及"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "高难诱惑"
+      },
+      "result": {
+        "id": "eval_047",
+        "category": "out_of_scope",
+        "difficulty": "hard",
+        "question": "RAG 在金融领域的应用案例?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定 — RAG 论文实验在 NLP 任务",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "金融领域不涉及"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定RAG在金融领域的具体应用案例。\n\n根据检索到的论文片段，该RAG论文主要展示了以下应用场景：\n\n1. **开放域问答任务** - 根据RAG论文，模型在四个开放域问答任务上都达到了最新的最优结果\n\n2. **事实验证** - 根据RAG论文，在FEVER事实验证任务中，RAG能够分类自然语言声明是否被维基百科支持或反驳\n\n3. **问题生成** - 根据RAG论文，在Jeopardy问题生成和MS-MARCO等任务中，RAG模型生成了更具体和事实准确的回答\n\n4. **文本生成** - 根据RAG论文，模型展示了在各种生成任务中的应用能力\n\n然而，当前检索到的论文片段中并未涉及RAG在金融领域的具体应用案例或实验结果。论文主要关注的是通用的知识密集型任务，而非特定的金融应用场景。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.3328619888625466,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.3173026747057744,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.3168961229194625,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.30653539718881795,
+            "text_preview": "We follow best practice and use pairwise comparative evaluation [34]. Evaluators are shown an answer and two generated questions, one from BART and one from RAG. They are then asked to pick one of fou"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.3017917844585127,
+            "text_preview": "Document 1: his works are considered classics of American literature ... His wartime experiences formed the basis for his novel ”A Farewell to Arms”(1929) ... Document 2: ... artists of the 1920s ”Los"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.47
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 0.833
+      }
+    },
+    {
+      "question": {
+        "id": "eval_048",
+        "category": "out_of_scope",
+        "difficulty": "hard",
+        "question": "Transformer 的训练成本是多少美元?",
+        "ground_truth": {
+          "expected_answer": "论文提到 FLOPs 但未提具体美元成本",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定具体成本",
+            "FLOPs 有但美元无"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "高难"
+      },
+      "result": {
+        "id": "eval_048",
+        "category": "out_of_scope",
+        "difficulty": "hard",
+        "question": "Transformer 的训练成本是多少美元?",
+        "ground_truth": {
+          "expected_answer": "论文提到 FLOPs 但未提具体美元成本",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定具体成本",
+            "FLOPs 有但美元无"
+          ]
+        },
+        "synapse_answer": "根据 Transformer 论文的内容，论文中并未直接提供以美元为单位的训练成本数据。\n\n论文中提供的训练成本信息包括：\n\n**计算成本（FLOPs）方面：**\n- Transformer (base model): 3.3 × 10^18 FLOPs（英德翻译）\n- Transformer (big): 2.3 × 10^19 FLOPs（英德翻译）\n\n**硬件和时间成本方面：**\n- 基础模型：在8个NVIDIA P100 GPU上训练，每个训练步骤约0.4秒，总计训练100,000步或12小时\n- 大模型：在8个NVIDIA P100 GPU上训练，每个训练步骤约1.0秒，总计训练300,000步（3.5天）\n\n论文提到他们通过\"训练时间 × GPU数量 × 每个GPU的估计单精度浮点运算能力\"来估算模型训练所需的浮点运算次数，但并未提供具体的美元成本计算。\n\n因此，基于现有片段无法确定 Transformer 的具体美元训练成本。",
+        "synapse_citations": [
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.3958253305985787,
+            "text_preview": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model B"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.3806535387356398,
+            "text_preview": "We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point ca"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "8",
+            "score": 0.38022359593077476,
+            "text_preview": "Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 "
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "7",
+            "score": 0.35467708552643057,
+            "text_preview": "Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens. 5.2 Har"
+          },
+          {
+            "file_name": "transformer.pdf",
+            "page": "9",
+            "score": 0.32587521913710876,
+            "text_preview": "We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3. In Table 3 rows (A), we vary the number of attention heads and the attention"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 8.5
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 0.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 0.667
+      }
+    },
+    {
+      "question": {
+        "id": "eval_049",
+        "category": "out_of_scope",
+        "difficulty": "hard",
+        "question": "ReAct 和 Chain-of-Thought 的区别?",
+        "ground_truth": {
+          "expected_answer": "仅可基于 ReAct 论文里对 CoT 的简短对比回答,CoT 完整论文不在库",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "仅基于 ReAct 论文里的对比"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        },
+        "notes": "灰色地带题"
+      },
+      "result": {
+        "id": "eval_049",
+        "category": "out_of_scope",
+        "difficulty": "hard",
+        "question": "ReAct 和 Chain-of-Thought 的区别?",
+        "ground_truth": {
+          "expected_answer": "仅可基于 ReAct 论文里对 CoT 的简短对比回答,CoT 完整论文不在库",
+          "expected_papers": [
+            "react.pdf"
+          ],
+          "expected_pages": [],
+          "key_facts": [
+            "仅基于 ReAct 论文里的对比"
+          ]
+        },
+        "synapse_answer": "根据ReAct论文的内容，ReAct和Chain-of-Thought (CoT)存在以下关键区别：\n\n## 1. 交互性差异\n\n根据ReAct论文，**Chain-of-Thought推理是一个静态的黑盒过程**，模型使用其内部表征来生成思考过程，**不与外部世界进行交互**。而**ReAct则通过与环境的交互来进行推理**，能够检索信息来支持推理，同时使用推理来指导下一步要检索什么内容，展现了推理和行动的协同作用。\n\n## 2. 知识更新能力\n\n根据ReAct论文，Chain-of-Thought**不能基于外部世界进行反应性推理或更新其知识**，这限制了其推理能力。相比之下，ReAct通过与外部环境（如Wikipedia API）的交互，能够动态获取和更新信息来支持推理过程。\n\n## 3. 错误处理机制\n\n根据ReAct论文，Chain-of-Thought的静态特性可能导致**事实幻觉和推理过程中的错误传播**问题。而ReAct通过外部反馈和交互，能够更好地纠正和调整推理过程。\n\n## 4. 应用场景\n\n根据ReAct论文，Chain-of-Thought主要适用于算术、常识和符号推理等任务。而**ReAct由于其灵活的思考空间和思考-行动发生格式，适用于具有不同行动空间和推理需求的多样化任务**，包括问答、事实验证、文本游戏和网页导航等。\n\n## 5. 可控性和可解释性\n\n根据ReAct论文，ReAct提供了**可解释的顺序决策和推理过程**，人类可以轻松检查推理和事实正确性，甚至可以通过思考编辑来控制或纠正智能体行为，而Chain-of-Thought缺乏这种交互式的可控性。",
+        "synapse_citations": [
+          {
+            "file_name": "react.pdf",
+            "page": "3",
+            "score": 0.43904557084161133,
+            "text_preview": "limited support of reasoning and acting behaviors), and perform initial ﬁnetuning experiments showing the potential of ReAct to improve with additional training data. Scaling up ReAct to train and ope"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.4268817379951667,
+            "text_preview": "In contrast, the reasoning traces in ReAct for decision making is ﬂexible and sparse, allowing diverse reasoning types (see Section 2) to be induced for different tasks. To demonstrate the differences"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "4",
+            "score": 0.41714596747047394,
+            "text_preview": "Published as a conference paper at ICLR 2023 appear sparsely in the most relevant positions of a trajectory, so we let the language model decide the asynchronous occurrence of thoughts and actions for"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "8",
+            "score": 0.4115046891917045,
+            "text_preview": "In fact, even the worse ReAct trial (48%) beats the best trial of both methods. Moreover, the advantage of ReAct over Act is consistent across six controlled trials, with relative performance gain ran"
+          },
+          {
+            "file_name": "react.pdf",
+            "page": "2",
+            "score": 0.40819718888689144,
+            "text_preview": "(a) Standard, (b) Chain-of-thought ( CoT, Reason Only), (c) Act-only, and (d) ReAct (Reason+Act), solving a HotpotQA (Yang et al., 2018) question. (2) Comparison of (a) Act-only and (b) ReAct promptin"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 14.03
+      },
+      "scores": {
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "accuracy": 0.0,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "question": {
+        "id": "eval_050",
+        "category": "out_of_scope",
+        "difficulty": "hard",
+        "question": "RAG 论文之后又有哪些 RAG 变种?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定 — 后续变种不在库",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "后续变种不在库"
+          ]
+        },
+        "eval_config": {
+          "judge_method": "manual",
+          "tolerance": "loose"
+        }
+      },
+      "result": {
+        "id": "eval_050",
+        "category": "out_of_scope",
+        "difficulty": "hard",
+        "question": "RAG 论文之后又有哪些 RAG 变种?",
+        "ground_truth": {
+          "expected_answer": "基于现有片段无法确定 — 后续变种不在库",
+          "expected_papers": [],
+          "expected_pages": [],
+          "key_facts": [
+            "无法确定",
+            "后续变种不在库"
+          ]
+        },
+        "synapse_answer": "基于现有片段无法确定RAG论文之后的具体变种。\n\n根据RAG论文片段显示，该论文主要介绍了RAG模型的两个核心变体：\n- RAG-Token：在每个token生成时都可能使用不同的检索文档\n- RAG-Sequence：对整个序列使用相同的检索文档\n\n论文片段中提到RAG在多个任务上取得了state-of-the-art结果，包括开放域问答、事实验证等，并且代码已开源至HuggingFace Transformers库。但是，检索到的片段均来自RAG原始论文本身，没有涉及该论文发表后出现的后续变种或改进工作的相关内容。\n\n要了解RAG论文之后的变种发展，需要检索更多后续相关研究的论文片段。",
+        "synapse_citations": [
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.4108840455171118,
+            "text_preview": "Jeopardy Question Gener -ation Washington BART ?This state has the largest number of counties in the U.S. RAG-T It’s the only U.S. state named for a U.S. president RAG-S It’s the state where you’ll ﬁn"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "2",
+            "score": 0.40555869763835434,
+            "text_preview": "For FEVER [56] fact veriﬁcation, we achieve results within 4.3% of state-of-the-art pipeline models which use strong retrieval supervision. Finally, we demonstrate that the non-parametric memory can b"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "7",
+            "score": 0.398960525405259,
+            "text_preview": "Retrieval Ablations A key feature of RAG is learning to retrieve relevant information for the task. To assess the effectiveness of the retrieval mechanism, we run ablations where we freeze the retriev"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "5",
+            "score": 0.3976055698927916,
+            "text_preview": "We follow best practice and use pairwise comparative evaluation [34]. Evaluators are shown an answer and two generated questions, one from BART and one from RAG. They are then asked to pick one of fou"
+          },
+          {
+            "file_name": "rag.pdf",
+            "page": "17",
+            "score": 0.38312951932794204,
+            "text_preview": "After submission, We have ported our code to HuggingFace Transformers [66]3, which achieves equivalent performance to the previous version but is a cleaner and easier to use implementation. This versi"
+          }
+        ],
+        "error": null,
+        "duration_seconds": 7.58
+      },
+      "scores": {
+        "recall_at_5": null,
+        "mrr": null,
+        "accuracy": 0.5,
+        "relevance": null,
+        "relevance_reason": null,
+        "citation_rate": 1.0,
+        "refusal": 1.0,
+        "total": 0.833
+      }
+    }
+  ]
+}

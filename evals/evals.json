@@ -1,0 +1,248 @@
+{
+  "version": "v1",
+  "total_questions": 50,
+  "created_at": "2026-05-23",
+  "papers_indexed": ["transformer.pdf", "rag.pdf", "react.pdf"],
+  "total_chunks": 170,
+  "progress": "50 / 50",
+  
+  "questions": [
+    {"id": "eval_001", "category": "metadata", "difficulty": "easy", "question": "Transformer 论文的作者是谁?", "ground_truth": {"expected_answer": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin(8 位,等同贡献,顺序随机)", "expected_papers": ["transformer.pdf"], "expected_pages": [1], "key_facts": ["8 位作者", "Vaswani", "Equal contribution"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_002", "category": "metadata", "difficulty": "easy", "question": "Transformer 论文标题是什么?", "ground_truth": {"expected_answer": "Attention Is All You Need", "expected_papers": ["transformer.pdf"], "expected_pages": [1], "key_facts": ["Attention Is All You Need"]}, "eval_config": {"judge_method": "manual", "tolerance": "strict"}},
+
+    {"id": "eval_003", "category": "metadata", "difficulty": "easy", "question": "RAG 论文的第一作者是谁?", "ground_truth": {"expected_answer": "Patrick Lewis(Facebook AI Research)", "expected_papers": ["rag.pdf"], "expected_pages": [1], "key_facts": ["Patrick Lewis", "Facebook AI Research"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_004", "category": "metadata", "difficulty": "medium", "question": "RAG 论文的标题是什么?", "ground_truth": {"expected_answer": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", "expected_papers": ["rag.pdf"], "expected_pages": [1], "key_facts": ["Retrieval-Augmented Generation", "Knowledge-Intensive NLP Tasks"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_005", "category": "metadata", "difficulty": "easy", "question": "ReAct 论文的作者中,Shunyu Yao 在哪个机构?", "ground_truth": {"expected_answer": "Princeton University 普林斯顿大学", "expected_papers": ["react.pdf"], "expected_pages": [1], "key_facts": ["Princeton", "普林斯顿"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_006", "category": "metadata", "difficulty": "medium", "question": "ReAct 论文是哪一年发表的?", "ground_truth": {"expected_answer": "2022 年(ICLR 2023)", "expected_papers": ["react.pdf"], "expected_pages": [1], "key_facts": ["2022", "ICLR 2023"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_007", "category": "metadata", "difficulty": "medium", "question": "Transformer 论文是发表在哪个会议?", "ground_truth": {"expected_answer": "NIPS 2017", "expected_papers": ["transformer.pdf"], "expected_pages": [1], "key_facts": ["NIPS", "2017"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "知识泄露幻觉高发题"},
+
+    {"id": "eval_008", "category": "metadata", "difficulty": "hard", "question": "RAG 论文的所有作者所在的机构有哪些?", "ground_truth": {"expected_answer": "Facebook AI Research, University College London, New York University", "expected_papers": ["rag.pdf"], "expected_pages": [1], "key_facts": ["Facebook AI Research", "UCL", "NYU"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_009", "category": "metadata", "difficulty": "hard", "question": "Transformer 论文中,哪位作者贡献了 multi-head attention 机制?", "ground_truth": {"expected_answer": "Noam Shazeer", "expected_papers": ["transformer.pdf"], "expected_pages": [1], "key_facts": ["Noam Shazeer", "multi-head attention"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_010", "category": "metadata", "difficulty": "hard", "question": "ReAct 论文有多少位作者?他们来自几个机构?", "ground_truth": {"expected_answer": "6 位作者,2 个机构(Princeton + Google Research)", "expected_papers": ["react.pdf"], "expected_pages": [1], "key_facts": ["6 位", "Princeton", "Google Research"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_011", "category": "definition", "difficulty": "easy", "question": "什么是 self-attention?", "ground_truth": {"expected_answer": "Self-attention(自注意力)是一种注意力机制,通过关联单个序列中的不同位置来计算该序列的表示。是 Transformer 模型的核心组件。", "expected_papers": ["transformer.pdf"], "expected_pages": [2, 3], "key_facts": ["self-attention", "注意力机制", "序列内位置关联", "Transformer 核心"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_012", "category": "definition", "difficulty": "easy", "question": "什么是 RAG?", "ground_truth": {"expected_answer": "RAG(Retrieval-Augmented Generation,检索增强生成)是结合检索器和生成器的模型,通过检索外部知识库辅助 LLM 回答知识密集型任务。", "expected_papers": ["rag.pdf"], "expected_pages": [1, 2], "key_facts": ["Retrieval-Augmented Generation", "检索 + 生成", "外部知识库", "知识密集型任务"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_013", "category": "definition", "difficulty": "easy", "question": "什么是 ReAct?", "ground_truth": {"expected_answer": "ReAct(Reasoning + Acting)是一种结合推理(Reasoning)和行动(Acting)的 LLM 框架,通过交替生成 thought / action / observation 完成任务。", "expected_papers": ["react.pdf"], "expected_pages": [1, 2], "key_facts": ["Reasoning + Acting", "thought / action / observation", "交替生成"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_014", "category": "definition", "difficulty": "medium", "question": "什么是 multi-head attention?", "ground_truth": {"expected_answer": "Multi-head attention(多头注意力)是将 attention 机制并行执行多次的设计,每个 'head' 关注不同子空间的信息,最后拼接输出。", "expected_papers": ["transformer.pdf"], "expected_pages": [4, 5], "key_facts": ["多头", "并行", "不同子空间", "拼接"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_015", "category": "definition", "difficulty": "medium", "question": "什么是 positional encoding?", "ground_truth": {"expected_answer": "Positional encoding(位置编码)用于给 Transformer 注入序列位置信息(因为 self-attention 本身没有位置感知)。论文用正弦/余弦函数编码。", "expected_papers": ["transformer.pdf"], "expected_pages": [5, 6], "key_facts": ["位置编码", "正弦余弦", "self-attention 无位置感知"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_016", "category": "definition", "difficulty": "medium", "question": "RAG 的 retriever 和 generator 分别是什么?", "ground_truth": {"expected_answer": "Retriever 用 DPR(Dense Passage Retrieval)从外部知识库检索相关文档;Generator 用 BART(基于 Transformer 的 seq2seq 模型)生成最终答案。", "expected_papers": ["rag.pdf"], "expected_pages": [2, 3], "key_facts": ["DPR", "Dense Passage Retrieval", "BART", "seq2seq"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_017", "category": "definition", "difficulty": "medium", "question": "ReAct 的 thought、action、observation 各是什么意思?", "ground_truth": {"expected_answer": "Thought:LLM 的推理过程(为下一步行动制定计划);Action:调用外部工具的具体动作(如搜索、查询);Observation:工具返回的结果。三者交替形成循环。", "expected_papers": ["react.pdf"], "expected_pages": [2, 3], "key_facts": ["Thought 推理", "Action 行动", "Observation 观察", "交替循环"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_018", "category": "definition", "difficulty": "hard", "question": "什么是 scaled dot-product attention?它和 additive attention 的区别?", "ground_truth": {"expected_answer": "Scaled dot-product attention 用 QK^T/√d_k 计算注意力分数(用 √d_k 缩放避免梯度消失)。比 additive attention 更快(矩阵乘法),但在 d_k 大时未缩放会有梯度问题。", "expected_papers": ["transformer.pdf"], "expected_pages": [4], "key_facts": ["dot-product", "√d_k 缩放", "比 additive 快", "梯度问题"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_019", "category": "definition", "difficulty": "hard", "question": "RAG 的两种变体:RAG-Sequence 和 RAG-Token 的区别?", "ground_truth": {"expected_answer": "RAG-Sequence:对每个文档生成完整序列,再边缘化(marginalize);RAG-Token:每个 token 都可能来自不同文档(更细粒度的混合)。", "expected_papers": ["rag.pdf"], "expected_pages": [3, 4], "key_facts": ["RAG-Sequence", "RAG-Token", "完整序列 vs 单 token", "边缘化"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_020", "category": "definition", "difficulty": "hard", "question": "ReAct 中,如果只保留 reasoning(去掉 acting),效果会怎样?", "ground_truth": {"expected_answer": "只保留 reasoning(就是 CoT,Chain-of-Thought)在某些任务上有用,但缺少外部信息源会导致幻觉。ReAct 论文的消融实验显示,acting + reasoning 比纯 CoT 在知识密集型任务上更好。", "expected_papers": ["react.pdf"], "expected_pages": [4, 5], "key_facts": ["CoT", "消融实验", "acting + reasoning 优于纯 CoT", "知识密集型任务"]}, "eval_config": {"judge_method": "llm", "tolerance": "loose"}},
+
+    {"id": "eval_021", "category": "detail", "difficulty": "easy", "question": "Transformer 论文中 attention head 的数量是多少?", "ground_truth": {"expected_answer": "8 个 attention heads(h = 8)。base 模型用 8 个,big 模型用 16 个。", "expected_papers": ["transformer.pdf"], "expected_pages": [4, 5], "key_facts": ["8", "base 模型", "16 (big)"]}, "eval_config": {"judge_method": "manual", "tolerance": "strict"}},
+
+    {"id": "eval_022", "category": "detail", "difficulty": "easy", "question": "Transformer base 模型有多少层?", "ground_truth": {"expected_answer": "Encoder 6 层,Decoder 6 层(N = 6)", "expected_papers": ["transformer.pdf"], "expected_pages": [3, 4], "key_facts": ["6 层", "encoder", "decoder", "N = 6"]}, "eval_config": {"judge_method": "manual", "tolerance": "strict"}},
+
+    {"id": "eval_023", "category": "detail", "difficulty": "easy", "question": "Transformer base 模型的 d_model 是多少?", "ground_truth": {"expected_answer": "d_model = 512(base 模型),1024(big 模型)", "expected_papers": ["transformer.pdf"], "expected_pages": [4, 5], "key_facts": ["512", "d_model", "1024 (big)"]}, "eval_config": {"judge_method": "manual", "tolerance": "strict"}},
+
+    {"id": "eval_024", "category": "detail", "difficulty": "medium", "question": "Transformer 在 WMT 2014 English-to-German 任务上的 BLEU 分数是多少?", "ground_truth": {"expected_answer": "Big 模型 28.4 BLEU(state-of-the-art),Base 模型 27.3 BLEU", "expected_papers": ["transformer.pdf"], "expected_pages": [8, 9], "key_facts": ["28.4", "BLEU", "Big 模型", "WMT 2014"]}, "eval_config": {"judge_method": "manual", "tolerance": "strict"}},
+
+    {"id": "eval_025", "category": "detail", "difficulty": "medium", "question": "RAG 用的检索器(retriever)的 hidden dimension 是多少?", "ground_truth": {"expected_answer": "DPR 的 encoder 输出 768 维向量(基于 BERT-base)", "expected_papers": ["rag.pdf"], "expected_pages": [3], "key_facts": ["768", "BERT-base", "DPR"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "等你看 PDF 确认数字"},
+
+    {"id": "eval_026", "category": "detail", "difficulty": "medium", "question": "Transformer 的训练用了多少个 GPU,跑了多久?", "ground_truth": {"expected_answer": "Base 模型:8 块 P100 GPU 训练 12 小时;Big 模型:8 块 P100 GPU 训练 3.5 天", "expected_papers": ["transformer.pdf"], "expected_pages": [7, 8], "key_facts": ["8 块 P100", "12 小时 (base)", "3.5 天 (big)"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_027", "category": "detail", "difficulty": "medium", "question": "ReAct 在 HotpotQA 上的准确率是多少?", "ground_truth": {"expected_answer": "ReAct(配合工具调用)在 HotpotQA 上的 EM(Exact Match)约为 35-40%,优于纯 CoT 基线", "expected_papers": ["react.pdf"], "expected_pages": [5, 6], "key_facts": ["HotpotQA", "EM 准确率", "优于 CoT"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "等你看 PDF 确认数字"},
+
+    {"id": "eval_028", "category": "detail", "difficulty": "hard", "question": "Transformer 的 Adam 优化器参数是什么?", "ground_truth": {"expected_answer": "Adam,β1 = 0.9,β2 = 0.98,ε = 1e-9。学习率用 warmup_steps = 4000 的 noam schedule", "expected_papers": ["transformer.pdf"], "expected_pages": [7], "key_facts": ["β1 = 0.9", "β2 = 0.98", "ε = 1e-9", "warmup 4000"]}, "eval_config": {"judge_method": "manual", "tolerance": "strict"}},
+
+    {"id": "eval_029", "category": "detail", "difficulty": "hard", "question": "Transformer 的 dropout 率是多少?", "ground_truth": {"expected_answer": "Base 模型 Pdrop = 0.1;还使用 label smoothing ε_ls = 0.1", "expected_papers": ["transformer.pdf"], "expected_pages": [7], "key_facts": ["0.1", "dropout", "label smoothing"]}, "eval_config": {"judge_method": "manual", "tolerance": "strict"}},
+
+    {"id": "eval_030", "category": "detail", "difficulty": "hard", "question": "RAG 论文中 retriever 检索的 top-K 是多少?", "ground_truth": {"expected_answer": "top-K = 5 或 10(论文做了对比实验,K = 5 是默认值)", "expected_papers": ["rag.pdf"], "expected_pages": [3, 4], "key_facts": ["K = 5", "默认值", "对比实验"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "等你看 PDF 确认数字"},
+
+
+  {
+    "id": "eval_031",
+    "category": "cross_paper",
+    "subcategory": "parallel",
+    "difficulty": "easy",
+    "question": "Transformer 和 ReAct 都基于 LLM 吗?",
+    "ground_truth": {
+      "expected_answer": "Transformer 本身是一种模型架构(2017),ReAct 是基于 LLM 的提示框架(2022)。Transformer 不是 LLM,但现代 LLM(包括 ReAct 用的)都基于 Transformer 架构。",
+      "expected_papers": ["transformer.pdf", "react.pdf"],
+      "expected_pages": [],
+      "key_facts": ["Transformer 是架构", "ReAct 是提示框架", "现代 LLM 基于 Transformer"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" },
+    "notes": "并列对比 — 看是否区分'架构' vs '提示框架'"
+  },
+  
+  {
+    "id": "eval_032",
+    "category": "cross_paper",
+    "subcategory": "parallel",
+    "difficulty": "medium",
+    "question": "Transformer / RAG / ReAct 这三篇论文都在解决什么核心问题?",
+    "ground_truth": {
+      "expected_answer": "Transformer 解决序列建模问题(替代 RNN);RAG 解决 LLM 知识陈旧问题(引入外部检索);ReAct 解决 LLM 推理-行动协同问题(交替推理和工具调用)。三者层次不同:Transformer 是底层架构,RAG 是知识增强,ReAct 是推理框架。",
+      "expected_papers": ["transformer.pdf", "rag.pdf", "react.pdf"],
+      "expected_pages": [],
+      "key_facts": ["Transformer 序列建模", "RAG 知识陈旧", "ReAct 推理-行动协同", "层次不同"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" },
+    "notes": "🌟 高价值题 — 3 篇论文同时覆盖,测真正的'知识网络'能力"
+  },
+  
+  {
+    "id": "eval_033",
+    "category": "cross_paper",
+    "subcategory": "parallel",
+    "difficulty": "hard",
+    "question": "Transformer 和 RAG 论文中,attention 机制分别扮演什么角色?",
+    "ground_truth": {
+      "expected_answer": "Transformer 论文里,attention 是模型核心(self-attention 替代 RNN);RAG 论文里,attention 是 generator(BART)内部的标准机制,RAG 的创新不在 attention,而在'检索+生成'的联合训练。",
+      "expected_papers": ["transformer.pdf", "rag.pdf"],
+      "expected_pages": [],
+      "key_facts": ["Transformer 中是核心创新", "RAG 中是标准组件", "RAG 创新在检索+生成联合"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" }
+  },
+  
+  {
+    "id": "eval_034",
+    "category": "cross_paper",
+    "subcategory": "causal",
+    "difficulty": "easy",
+    "question": "RAG 系统用了哪个 LLM 作为生成器?",
+    "ground_truth": {
+      "expected_answer": "RAG 用 BART 作为生成器。BART 本身基于 Transformer 架构(encoder-decoder),所以 RAG 间接用了 Transformer。",
+      "expected_papers": ["rag.pdf", "transformer.pdf"],
+      "expected_pages": [],
+      "key_facts": ["BART", "BART 基于 Transformer", "encoder-decoder"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" },
+    "notes": "因果关系 — 测是否能识别'RAG → BART → Transformer'的依赖链"
+  },
+  
+  {
+    "id": "eval_035",
+    "category": "cross_paper",
+    "subcategory": "causal",
+    "difficulty": "medium",
+    "question": "ReAct 论文里有没有用到 Transformer?",
+    "ground_truth": {
+      "expected_answer": "ReAct 本身是一种 prompt 框架(thought-action-observation 循环),不依赖特定架构。但论文实验用的是 PaLM(基于 Transformer)。所以 ReAct 间接依赖 Transformer。",
+      "expected_papers": ["react.pdf", "transformer.pdf"],
+      "expected_pages": [],
+      "key_facts": ["ReAct 是 prompt 框架", "实验用 PaLM", "PaLM 基于 Transformer"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" }
+  },
+  
+  {
+    "id": "eval_036",
+    "category": "cross_paper",
+    "subcategory": "complementary",
+    "difficulty": "medium",
+    "question": "如果把 ReAct 的思想用到 RAG 系统上,会有什么效果?",
+    "ground_truth": {
+      "expected_answer": "ReAct 的 thought-action-observation 循环,可以让 RAG 从'一次检索'变成'多次检索 + 推理'。例如,LLM 先 thought(分析需要什么信息) → action(检索文档) → observation(读结果) → 下一轮 thought(发现还缺信息) → action(再次检索)。这其实就是现代 Agentic RAG 的雏形。",
+      "expected_papers": ["react.pdf", "rag.pdf"],
+      "expected_pages": [],
+      "key_facts": ["thought-action-observation 循环", "多轮检索", "Agentic RAG", "动态决策"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" },
+    "notes": "🌟 高价值题 — 测'综合思考能力',这是简单 RAG 工具答不出的"
+  },
+  
+  {
+    "id": "eval_037",
+    "category": "cross_paper",
+    "subcategory": "complementary",
+    "difficulty": "hard",
+    "question": "Transformer 的 multi-head attention 对 RAG 的检索阶段有帮助吗?",
+    "ground_truth": {
+      "expected_answer": "RAG 的检索阶段用 DPR(Dense Passage Retrieval),DPR 的 encoder 是 BERT(基于 Transformer)。所以 RAG 检索阶段确实间接用了 Transformer 的 multi-head attention(在 BERT encoder 内部)。但 RAG 论文本身没讨论 attention 在检索阶段的作用,只把它当作 DPR 的标准组件。",
+      "expected_papers": ["transformer.pdf", "rag.pdf"],
+      "expected_pages": [],
+      "key_facts": ["DPR 基于 BERT", "BERT 基于 Transformer", "RAG 论文未单独讨论检索阶段 attention"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" }
+  },
+  
+  {
+    "id": "eval_038",
+    "category": "cross_paper",
+    "subcategory": "contrast",
+    "difficulty": "medium",
+    "question": "RAG 和 ReAct 都'调用外部信息',它们的区别是什么?",
+    "ground_truth": {
+      "expected_answer": "RAG:一次性检索(retriever 拉 top-K 文档,然后生成),被动接收信息。ReAct:多轮交互(LLM 主动决定何时调用什么工具),主动决策。RAG 更像'查资料的学生',ReAct 更像'解决问题的研究员'。",
+      "expected_papers": ["rag.pdf", "react.pdf"],
+      "expected_pages": [],
+      "key_facts": ["RAG 一次性检索", "ReAct 多轮交互", "被动 vs 主动", "查资料 vs 研究"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" },
+    "notes": "🌟 高价值题 — '查资料的学生 vs 解决问题的研究员'类比"
+  },
+  
+  {
+    "id": "eval_039",
+    "category": "cross_paper",
+    "subcategory": "contrast",
+    "difficulty": "hard",
+    "question": "Transformer / RAG / ReAct 三者在'解决幻觉'上各有什么思路?",
+    "ground_truth": {
+      "expected_answer": "Transformer:不直接解决幻觉(它是底层架构,幻觉是上层应用问题)。RAG:用'检索外部知识'减少幻觉(知识有出处)。ReAct:用'交互式工具调用'减少幻觉(thought 暴露推理过程,action 验证假设)。三者层次不同 — Transformer 提供能力,RAG 提供知识源,ReAct 提供验证机制。",
+      "expected_papers": ["transformer.pdf", "rag.pdf", "react.pdf"],
+      "expected_pages": [],
+      "key_facts": ["Transformer 不直接解决", "RAG 用外部知识", "ReAct 用交互验证", "三个层次"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" },
+    "notes": "🌟 高价值题 — 完美对接你 Day 4 的反幻觉故事"
+  },
+  
+  {
+    "id": "eval_040",
+    "category": "cross_paper",
+    "subcategory": "contrast",
+    "difficulty": "hard",
+    "question": "如果用 Transformer / RAG / ReAct 构建一个 AI 系统,它们各负责什么角色?",
+    "ground_truth": {
+      "expected_answer": "Transformer:底层架构(LLM 本身的网络)。RAG:知识层(用检索给 LLM 注入外部知识)。ReAct:智能体层(让 LLM 自主决策何时检索、用什么工具)。三者形成'架构 → 知识 → 智能体'的层次结构,这其实就是现代 AI Agent 系统(如 Anthropic 的 Computer Use)的典型设计。",
+      "expected_papers": ["transformer.pdf", "rag.pdf", "react.pdf"],
+      "expected_pages": [],
+      "key_facts": ["架构 → 知识 → 智能体", "三层结构", "现代 AI Agent 设计"]
+    },
+    "eval_config": { "judge_method": "llm", "tolerance": "loose" },
+    "notes": "🌟 终极题 — 测候选人的'系统思维'"
+  },
+
+    {"id": "eval_041", "category": "out_of_scope", "difficulty": "easy", "question": "GPT-4 的参数量是多少?", "ground_truth": {"expected_answer": "基于现有片段无法确定", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定", "超出范围"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_042", "category": "out_of_scope", "difficulty": "easy", "question": "Claude 3 Sonnet 的训练数据截止到哪一年?", "ground_truth": {"expected_answer": "基于现有片段无法确定", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定", "超出范围"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_043", "category": "out_of_scope", "difficulty": "easy", "question": "Transformer 在医疗影像分析上有什么应用?", "ground_truth": {"expected_answer": "基于现有片段无法确定(论文不涉及医疗影像)", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定", "不涉及医疗"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "易诱发知识泄露"},
+
+    {"id": "eval_044", "category": "out_of_scope", "difficulty": "medium", "question": "BERT 和 Transformer 的区别是什么?", "ground_truth": {"expected_answer": "基于现有片段无法确定 — BERT 论文不在库中", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定", "BERT 不在库"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "高诱惑题"},
+
+    {"id": "eval_045", "category": "out_of_scope", "difficulty": "medium", "question": "ReAct 在 AlphaFold 上有应用吗?", "ground_truth": {"expected_answer": "基于现有片段无法确定", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_046", "category": "out_of_scope", "difficulty": "medium", "question": "OpenAI 的 o1 模型用了什么技术?", "ground_truth": {"expected_answer": "基于现有片段无法确定 — o1 不在库中", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定", "o1 不在库"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}},
+
+    {"id": "eval_047", "category": "out_of_scope", "difficulty": "hard", "question": "RAG 在金融领域的应用案例?", "ground_truth": {"expected_answer": "基于现有片段无法确定 — RAG 论文实验在 NLP 任务", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定", "金融领域不涉及"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "高难诱惑"},
+
+    {"id": "eval_048", "category": "out_of_scope", "difficulty": "hard", "question": "Transformer 的训练成本是多少美元?", "ground_truth": {"expected_answer": "论文提到 FLOPs 但未提具体美元成本", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定具体成本", "FLOPs 有但美元无"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "高难"},
+
+    {"id": "eval_049", "category": "out_of_scope", "difficulty": "hard", "question": "ReAct 和 Chain-of-Thought 的区别?", "ground_truth": {"expected_answer": "仅可基于 ReAct 论文里对 CoT 的简短对比回答,CoT 完整论文不在库", "expected_papers": ["react.pdf"], "expected_pages": [], "key_facts": ["仅基于 ReAct 论文里的对比"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}, "notes": "灰色地带题"},
+
+    {"id": "eval_050", "category": "out_of_scope", "difficulty": "hard", "question": "RAG 论文之后又有哪些 RAG 变种?", "ground_truth": {"expected_answer": "基于现有片段无法确定 — 后续变种不在库", "expected_papers": [], "expected_pages": [], "key_facts": ["无法确定", "后续变种不在库"]}, "eval_config": {"judge_method": "manual", "tolerance": "loose"}}
+  ]
+}
